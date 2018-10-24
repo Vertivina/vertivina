@@ -1,0 +1,11 @@
+C:\Users\HP\Documents\GitHub\pangu\bin\Debug\netcoreapp2.0\pangu.deps.json
+C:\Users\HP\Documents\GitHub\pangu\bin\Debug\netcoreapp2.0\pangu.runtimeconfig.json
+C:\Users\HP\Documents\GitHub\pangu\bin\Debug\netcoreapp2.0\pangu.runtimeconfig.dev.json
+C:\Users\HP\Documents\GitHub\pangu\bin\Debug\netcoreapp2.0\pangu.dll
+C:\Users\HP\Documents\GitHub\pangu\bin\Debug\netcoreapp2.0\pangu.pdb
+C:\Users\HP\Documents\GitHub\pangu\obj\Debug\netcoreapp2.0\pangu.csprojAssemblyReference.cache
+C:\Users\HP\Documents\GitHub\pangu\obj\Debug\netcoreapp2.0\pangu.csproj.CoreCompileInputs.cache
+C:\Users\HP\Documents\GitHub\pangu\obj\Debug\netcoreapp2.0\pangu.AssemblyInfoInputs.cache
+C:\Users\HP\Documents\GitHub\pangu\obj\Debug\netcoreapp2.0\pangu.AssemblyInfo.cs
+C:\Users\HP\Documents\GitHub\pangu\obj\Debug\netcoreapp2.0\pangu.dll
+C:\Users\HP\Documents\GitHub\pangu\obj\Debug\netcoreapp2.0\pangu.pdb
