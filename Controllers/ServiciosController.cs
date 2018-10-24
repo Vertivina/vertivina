@@ -54,7 +54,7 @@ namespace pangu.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("ID,Nombre,Precio")] Servicio servicio)
+        public async Task<IActionResult> Create([Bind("ID,Nombre,Precio,Celular,Email,Mensaje")] Servicio servicio)
         {
             if (ModelState.IsValid)
             {
@@ -86,7 +86,7 @@ namespace pangu.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("ID,Nombre,Precio")] Servicio servicio)
+        public async Task<IActionResult> Edit(int id, [Bind("ID,Nombre,Precio,Celular,Email.Mensaje")] Servicio servicio)
         {
             if (id != servicio.ID)
             {

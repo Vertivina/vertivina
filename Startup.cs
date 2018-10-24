@@ -26,7 +26,7 @@ namespace pangu
         {
             services.AddMvc();
              services.AddDbContext<MvcContext>(options =>
-                   options.UseMySQL("server=localhost;database=library3;user=root;password=1234;port=3306")
+                   options.UseMySQL(Configuration.GetConnectionString("Default"))
                    );
         }
 

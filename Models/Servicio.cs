@@ -8,6 +8,12 @@ namespace pangu.Models
 
         public double Precio{get; set;}
 
+        public int Celular { get; set; }
+
+        public string Email { get; set; }
+
+        public string Mensaje { get; set; }
+            
         
     }
 }
