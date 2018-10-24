@@ -20,9 +20,16 @@ namespace pangu.Controllers
         }
 
         // GET: Servicios
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string searchString)
         {
-            return View(await _context.Servicio.ToListAsync());
+             var servicios = from m in _context.Servicio
+                 select m;
+             if (!String.IsNullOrEmpty(searchString))
+            {
+                servicios = servicios.Where(s => s.Nombre.Contains(searchString));
+            }
+
+            return View(await servicios.ToListAsync());
         }
 
         // GET: Servicios/Details/5

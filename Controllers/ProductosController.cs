@@ -20,9 +20,17 @@ namespace pangu.Controllers
         }
 
         // GET: Productos
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string searchString)
         {
-            return View(await _context.Producto.ToListAsync());
+            var productos = from m in _context.Producto
+                 select m;
+             if (!String.IsNullOrEmpty(searchString))
+            {
+                productos = productos.Where(s => s.Nombre.Contains(searchString));
+            }
+
+
+            return View(await productos.ToListAsync());
         }
 
         // GET: Productos/Details/5
