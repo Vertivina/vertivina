@@ -30,13 +30,13 @@ namespace pangu.Controllers{
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Nombre")] Cita cita)
+        public async Task<IActionResult> Create([Bind("Nombre,Mascota,Telefono,TipoTelefono,Doctor,Fecha,Hora,TipoMascota,TipoCita,Direccion")] Cita cita)
         {
             if (ModelState.IsValid)
             {
                 _context.Add(cita);
                 await _context.SaveChangesAsync();
-                return RedirectToAction("index");
+                return RedirectToAction("Index");
             }
             return View("Cita",cita);
         }

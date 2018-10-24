@@ -23,6 +23,9 @@ namespace pangu.Models
         [DisplayFormat(DataFormatString = "{0:yyy-MM-dd}", ApplyFormatInEditMode = true)]
         public DateTime Fecha{get; set;}
 
+        public string Hora{ get; set; }
+
+
         public string TipoMascota{get; set;}
         public string TipoCita{get; set;}
         public string Direccion{get; set;}

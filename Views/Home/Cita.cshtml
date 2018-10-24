@@ -50,13 +50,13 @@ $(document).ready(function(){
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
 
-                <input type="text" placeholder="Nombre" class="form-control">
-                
+                <input type="text" asp-for="Nombre" placeholder="Nombre" class="form-control">
+                 <span asp-validation-for="Nombre" class="text-danger"></span>
             </div>
             <div class="form-group">
                 
-                <input type="text" placeholder="Nombre de mascota" class="form-control">
-                
+                <input type="text" placeholder="Nombre de mascota" class="form-control" asp-for="Mascota">
+                 <span asp-validation-for="Mascota" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <div class="row">
@@ -64,10 +64,10 @@ $(document).ready(function(){
                         <span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>
                     </div>
                     <div class="col-md-7">
-                         <input type="number" placeholder="Telefono" class="form-control">
+                         <input type="number" placeholder="Telefono" class="form-control" asp-for="Telefono">
                     </div>
                     <div class="col-md-4">
-                        <select  class="form-control">
+                        <select  class="form-control" asp-for="TipoTelefono">
                              <option value="Fijo">Fijo</option>
                              <option value="Movil">Movil</option>
                         </select>
@@ -81,7 +81,7 @@ $(document).ready(function(){
             </div>
             <div class="form-group">
                 <label for="">Doctor:</label>
-                <select  class="form-control">
+                <select  class="form-control" asp-for="Doctor">
                     <option value="Morgan">Morgan</option>
                     <option value="Darling">Darling</option>
                 </select>
@@ -89,19 +89,19 @@ $(document).ready(function(){
             </div>
             <div class="form-group">
                 <label for="">Horario:</label>
-                 <select  class="form-control">
-                    <option value="H1">12:30 A.M.</option>
-                    <option value="H2">2:45 P.M</option>
+                 <select  class="form-control" asp-for="Hora">
+                    <option value="12:30">12:30.</option>
+                    <option value="14:45">14:45</option>
                 </select>
                 
             </div>
             <div class="form-group">
-                <input type="date" placeholder="Fecha" class="form-control">
+                <input type="date" placeholder="Fecha" class="form-control" asp-for="Fecha">
                 
             </div>
             <div class="form-group">
                  <label for="">Tipo de mascota:</label>
-                 <select  class="form-control">
+                 <select  class="form-control" asp-for="TipoMascota">
                     <option value="T1">Mascota 1.</option>
                     <option value="T2">Mascota 2.</option>
                 </select>
@@ -109,14 +109,14 @@ $(document).ready(function(){
             </div>
             <div class="form-group">
                 <label for="">Tipo de cita:</label>
-                 <select  class="form-control">
+                 <select  class="form-control" asp-for="TipoCita">
                     <option value="C1" id="tc1">Veterinaria</option>
                     <option value="C2" id="tc2">A domicilio</option>
                 </select>
                 
             </div>
             <div class="form-group" id="dir">
-                <input type="text" placeholder="Dirección" class="form-control">
+                <input type="text" placeholder="Dirección" class="form-control" asp-for="Direccion">
             </div>
 
         </form> 
