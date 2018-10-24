@@ -40,7 +40,7 @@ namespace pangu.Controllers{
             {
                 _context.Add(cita);
                 await _context.SaveChangesAsync();
-                return RedirectToAction("Index");
+                return RedirectToAction("Index","Home");
             }
             return View("Cita",cita);
         }
