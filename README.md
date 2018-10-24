@@ -9,6 +9,8 @@ Glosario:<br/>
   dotnet ef migrations add InitialCreate <br/>
   dotnet ef database update<br/>
 <br/>
+Recordatorio: No borren las migraciones a menos que sea una verdadera emergencia o se quiera hacer desde cero
+ <br/>
 *Para autogenerar codigo: <br/>
  <br/>
 
