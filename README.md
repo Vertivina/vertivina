@@ -1,3 +1,3 @@
 # pangu
-Un simple repositorio de prueba. 
-No pregunten
+Un simple repositorio de prueba.__ 
+No pregunten__
