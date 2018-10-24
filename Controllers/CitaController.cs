@@ -26,10 +26,7 @@ namespace pangu.Controllers{
             return View();
         }
 
-        public IActionResult Create()
-        {
-            return View();
-        }
+       
 
 
         [HttpPost]
@@ -40,7 +37,7 @@ namespace pangu.Controllers{
             {
                 _context.Add(cita);
                 await _context.SaveChangesAsync();
-                return RedirectToAction("Index","Home");
+                return RedirectToAction(nameof(Index));
             }
             return View("Cita",cita);
         }

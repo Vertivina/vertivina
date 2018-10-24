@@ -7,12 +7,19 @@ using Microsoft.AspNetCore.Mvc;
 using pangu.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Mvc.Rendering;
-
+using Models.MvcContext;
 
 namespace pangu.Controllers
 {
     public class HomeController : Controller
     {
+
+    private readonly MvcContext _context;
+
+         public HomeController(MvcContext context)
+        {
+            _context = context;
+        }
         public IActionResult Index()
         {
             return View();
@@ -42,5 +49,8 @@ namespace pangu.Controllers
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
+
+      
+
     }
 }
