@@ -9,5 +9,8 @@ namespace pangu.Models
         public double Precio{get; set;}
 
         public int Stock {get; set;}
+
+        public string TipoProd{get; set;}
+       
     }
 }
