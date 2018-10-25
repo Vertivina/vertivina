@@ -16,6 +16,8 @@ namespace Models.MvcContext
         public DbSet<pangu.Models.Producto> Producto{get; set;}
          
         public DbSet<pangu.Models.Servicio> Servicio{get; set;}
+
+        public DbSet<pangu.Models.Contacto> Contacto{get; set;}
     }
 
 
