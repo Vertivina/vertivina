@@ -3,6 +3,8 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="~/assets/css/font-awesome.min.css"> 
+	<link rel="stylesheet" type="text/css" href="~/assets/css/hexagons.min.css"> 
     <title>@ViewData["Title"] - Vertivina</title>
 
     <environment include="Development">
@@ -30,45 +32,39 @@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
-                    <li><a asp-area="" asp-controller="Home" asp-action="About">About</a></li>
-                    <li><a asp-area="" asp-controller="Home" asp-action="Contact">Contact</a></li>
-                    <li><a asp-area="" asp-controller="Home" asp-action="Cita">Cita</a></li>
-                    <li><a asp-area="" asp-controller="Productos" asp-action="Index">Productos</a></li>
-                     <li><a asp-area="" asp-controller="Servicios" asp-action="Index">Servicos</a></li>
+                   
+                    <li style="font-weight:bold"><a asp-area="" asp-controller="Home" asp-action="About">Accesorios</a></li>
+                    <li style="font-weight:bold"><a asp-area="" asp-controller="Home" asp-action="Contact">Veterinaria</a></li>
+                    <li style="font-weight:bold"><a asp-area="" asp-controller="Home" asp-action="Cita">Cita</a></li>
+                    <li style="font-weight:bold"><a asp-area="" asp-controller="Home" asp-action="Contact">Adquiere un cachorro</a></li>
+                    <li style="font-weight:bold"><a asp-area="" asp-controller="Home" asp-action="Cliente">Contáctanos</a></li>
+                    <li style="font-weight:bold"><a asp-area="" asp-controller="Home" asp-action="Servicio">Servicios</a></li>
                 </ul>
             </div>
         </div>
     </nav>
+
+    <partial name="_CookieConsentPartial" />
+
     <div class="container body-content">
-        @RenderBody()
-        <hr />
-        <footer>
-            <table align= "center"> 
-        <tr>
-            <td>
-                <label>Pangu</label>
-            </td>
-
-            <td style="padding-left: 100px">
-                <label>Emergencias:</label>
-                <p>941-060-606</p> 
-                
-            </td>
-
-            <td style="padding-left: 100px">
-                <label>Visitanos:</label>
-                <div> <img src="~/images/face.png" width="45" height="45"> </div>  
-                
-            </td>
-
-            
-
-
-        </tr>
+    @RenderBody()
+    <footer style="background-color:#080808" style="bottom:0px">
+    <br>
+    <table style="heigth:40px">
+    <b> <p style="text-align:center; color:white; font-size:20px;">Síguenos en nuestras redes sociales:</p> </b>
+    
+                <div id="hexagon" class="col-lg-4 col-md-4 col-sm-4 col-xs-12  text-center" style="margin-bottom:15px;">
+                   <a href="https://www.facebook.com/"><span class="hb hb-sm spin-icon"><i class="fa fa-facebook"></i></span></a> 
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 text-center" style="margin-bottom:15px;">
+                   <a href="https://www.twitter.com"><span class="hb hb-sm spin-icon"><i class="fa fa-instagram"></a></i></span></a> 
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 text-center" style="margin-bottom:15px;">
+                     <a href="https://www.youtube.com"><span class="hb hb-sm spin-icon"><i class="fa fa-youtube"></a></i></span></a> 
+                </div>
+            <p style="color:aliceblue">&copy; 2018 - Equipo de Vertivina</p>
     </table>
-
-        </footer>
+    </footer>    
     </div>
 
     <environment include="Development">
@@ -93,5 +89,7 @@
     </environment>
 
     @RenderSection("Scripts", required: false)
+    <script src="~/js/site.min.js" asp-append-version="true"></script>
+    <script src="~/assets/js/hexagons.min.js" asp-append-version="true"></script>
 </body>
 </html>
