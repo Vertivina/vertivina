@@ -7,7 +7,7 @@ using Models.MvcContext;
 using MySql.Data.EntityFrameworkCore.Storage.Internal;
 using System;
 
-namespace pangu.Migrations
+namespace vertivina.Migrations
 {
     [DbContext(typeof(MvcContext))]
     partial class MvcContextModelSnapshot : ModelSnapshot
@@ -18,7 +18,7 @@ namespace pangu.Migrations
             modelBuilder
                 .HasAnnotation("ProductVersion", "2.0.3-rtm-10026");
 
-            modelBuilder.Entity("pangu.Models.Cita", b =>
+            modelBuilder.Entity("vertivina.Models.Cita", b =>
                 {
                     b.Property<int>("ID")
                         .ValueGeneratedOnAdd();
@@ -50,7 +50,7 @@ namespace pangu.Migrations
                     b.ToTable("Cita");
                 });
 
-            modelBuilder.Entity("pangu.Models.Contacto", b =>
+            modelBuilder.Entity("vertivina.Models.Contacto", b =>
                 {
                     b.Property<int>("ID")
                         .ValueGeneratedOnAdd();
@@ -77,7 +77,7 @@ namespace pangu.Migrations
                     b.ToTable("Contacto");
                 });
 
-            modelBuilder.Entity("pangu.Models.Producto", b =>
+            modelBuilder.Entity("vertivina.Models.Producto", b =>
                 {
                     b.Property<int>("ID")
                         .ValueGeneratedOnAdd();
@@ -95,7 +95,7 @@ namespace pangu.Migrations
                     b.ToTable("Producto");
                 });
 
-            modelBuilder.Entity("pangu.Models.Servicio", b =>
+            modelBuilder.Entity("vertivina.Models.Servicio", b =>
                 {
                     b.Property<int>("ID")
                         .ValueGeneratedOnAdd();

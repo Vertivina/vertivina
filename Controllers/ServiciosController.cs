@@ -6,9 +6,9 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Models.MvcContext;
-using pangu.Models;
+using vertivina.Models;
 
-namespace pangu.Controllers
+namespace vertivina.Controllers
 {
     public class ServiciosController : Controller
     {

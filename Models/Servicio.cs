@@ -1,4 +1,4 @@
-namespace pangu.Models
+namespace vertivina.Models
 {
     public class Servicio
     {

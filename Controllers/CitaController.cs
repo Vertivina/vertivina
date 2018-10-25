@@ -4,13 +4,13 @@ using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using pangu.Models;
+using vertivina.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Models.MvcContext;
 
 
-namespace pangu.Controllers{
+namespace vertivina.Controllers{
     public class CitaController: Controller{
 
         private readonly MvcContext _context;

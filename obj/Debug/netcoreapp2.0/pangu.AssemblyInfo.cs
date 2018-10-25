@@ -11,12 +11,12 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("pangu")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("vertivina")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
-[assembly: System.Reflection.AssemblyProductAttribute("pangu")]
-[assembly: System.Reflection.AssemblyTitleAttribute("pangu")]
+[assembly: System.Reflection.AssemblyProductAttribute("vertivina")]
+[assembly: System.Reflection.AssemblyTitleAttribute("vertivina")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 
 // Generado por la clase WriteCodeFragment de MSBuild.

@@ -2,7 +2,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace pangu.Migrations
+namespace vertivina.Migrations
 {
     public partial class Creacion1 : Migration
     {

@@ -1,6 +1,6 @@
 using System;
 
-namespace pangu.Models
+namespace vertivina.Models
 {
     public class Doctor: Persona
     {

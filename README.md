@@ -1,4 +1,4 @@
-# pangu
+# vertivina
 Un simple repositorio de prueba.<br/>
 Si es posible, nos lo quedamos<br/>
 

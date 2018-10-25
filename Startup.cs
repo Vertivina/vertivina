@@ -10,7 +10,7 @@ using Models.MvcContext;
 using MySql.Data.EntityFrameworkCore.Extensions;
 using Microsoft.EntityFrameworkCore;
 
-namespace pangu
+namespace vertivina
 {
     public class Startup
     {

@@ -13443,11 +13443,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\HP\\Documents\\GitHub\\pangu\\pangu.csproj",
-      "projectName": "pangu",
-      "projectPath": "c:\\Users\\HP\\Documents\\GitHub\\pangu\\pangu.csproj",
+      "projectUniqueName": "c:\\Users\\HP\\Documents\\GitHub\\vertivina\\vertivina.csproj",
+      "projectName": "vertivina",
+      "projectPath": "c:\\Users\\HP\\Documents\\GitHub\\vertivina\\vertivina.csproj",
       "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\HP\\Documents\\GitHub\\pangu\\obj\\",
+      "outputPath": "c:\\Users\\HP\\Documents\\GitHub\\vertivina\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

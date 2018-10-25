@@ -7,7 +7,7 @@
             "type": "process",
             "args": [
                 "build",
-                "${workspaceFolder}/pangu.csproj"
+                "${workspaceFolder}/vertivina.csproj"
             ],
             "problemMatcher": "$msCompile"
         }

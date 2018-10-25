@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using Microsoft.EntityFrameworkCore;
 
-namespace pangu.Models
+namespace vertivina.Models
 {
     public class Cita{
         public int ID{get; set;}
