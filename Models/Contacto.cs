@@ -7,6 +7,7 @@ namespace pangu.Models
 {
     public class Contacto
     {
+        public int ID{get; set;}
         [Required]
         public string Nombre { get; set; }
         
