@@ -43,6 +43,30 @@ $(document).ready(function(){
 
 </div>
 
+<div class="containerDoc">
+    <div id="slider">
+        
+        <div><img src="~/images/aarom.jpg" height="200px" width="200px"></div>  
+        <div><img src="~/images/alvaro.jpg" height="200px" width="200px"></div>   
+        <div><img src="~/images/cesar.jpg" height="200px" width="200px"></div>   
+        <div><img src="~/images/julio.jpg" height="200px" width="200px"></div>    
+          </div>
+</div>   
+<script>
+      $(function(){
+        $('#slider div:gt(0)').hide();
+           setInterval(function(){
+               $('#slider div:first-child').fadeOut(1000)
+                 .next('div').fadeIn(1000)
+                 .end().appendTo('#slider');
+
+           },3000);
+       })
+
+</script>
+        
+  
+
 <div class="container">
    <div class="row">
     <div class="col-md-6 col-md-offset-3">
