@@ -1,0 +1,18 @@
+body {
+
+background-image: url('~/images/fondo.jpg') center center cover no-repeat fixed;
+background: blue;
+}
+
+
+@media only screen and (max-width: 767px) {
+
+body {
+
+background-image: url('~/images/fondito.jpg');
+background-color: yellow;
+
+}
+}
+
+

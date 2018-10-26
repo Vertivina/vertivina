@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="~/assets/css/font-awesome.min.css"> 
 	<link rel="stylesheet" type="text/css" href="~/assets/css/hexagons.min.css"> 
+    <link rel="stylesheet" type="text/css" href="~/assets/css/estilos.css"> 
     <title>@ViewData["Title"] - Vertivina</title>
+  
 
     <environment include="Development">
         <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
@@ -17,8 +19,10 @@
               asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute" />
         <link rel="stylesheet" href="~/css/site.min.css" asp-append-version="true" />
     </environment>
+
+    
 </head>
-<body>
+<body style="background-image: url(images/fondo.jpg);" >
     <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
@@ -48,6 +52,10 @@
 
     <div class="container body-content">
     @RenderBody()
+    
+       
+    </div> <br><br>
+
     <footer style="background-color:#080808" style="bottom:0px">
     <br>
    
@@ -55,20 +63,25 @@
     
                 <div id="hexagon" class="col-lg-4 col-md-4 col-sm-4 col-xs-12  text-center" style="margin-bottom:15px;">
                    <a href="https://www.facebook.com/"><span class="hb hb-sm spin-icon"><i class="fa fa-facebook"></i></span></a> 
+                   <br>
+                  <b style="color:white;">Facebook</b> 
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 text-center" style="margin-bottom:15px;">
                    <a href="https://www.twitter.com"><span class="hb hb-sm spin-icon"><i class="fa fa-instagram"></a></i></span></a> 
+                    <br>
+                   <b style="color:white;">Síguenos en Instagram</b> 
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 text-center" style="margin-bottom:15px;">
                      <a href="https://www.youtube.com"><span class="hb hb-sm spin-icon"><i class="fa fa-youtube"></a></i></span></a> 
+                    <br>
+                 <b style="color:white;">Mira nuestros videos</b> 
                 </div>
                 <div style="color:aliceblue"><p style="text-align:center"> HORARIO DE ATENCIÓN Lunes a Viernes de (8:30 a.m. a 5:30 p.m. Dirección Av. Ricardo E. Aparicio 740 Urb. Las Lagunas </p> </div>
                 
                 <div style="color:aliceblue"><p style="text-align:center">Teléfonos: 313-4496 (Directo) 313-4444 (Central) anexos 312</p> </div>
-            <div style="color:aliceblue"> <p style="text-align:right">&copy; 2018 - Equipo de Vertivina</p> </div>
-   
-    </footer>    
-    </div>
+            <div style="color:aliceblue"> <p style="text-align:right;margin-right:18px;padding-bottom:6px;">&copy; 2018 - Equipo de Vertivina</p> </div>
+            
+    </footer> 
 
     <environment include="Development">
         <script src="~/lib/jquery/dist/jquery.js"></script>
