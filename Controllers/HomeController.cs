@@ -45,6 +45,13 @@ namespace vertivina.Controllers
             return View();
         }
 
+
+         public IActionResult Servicios()
+        {
+            ViewData["Message"] = "Registra aqui tu cita";
+
+            return View();
+        }
         public IActionResult Error()
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
