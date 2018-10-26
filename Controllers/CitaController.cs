@@ -39,7 +39,7 @@ namespace vertivina.Controllers{
                 await _context.SaveChangesAsync();
                 return RedirectToAction("Index","Home");
             }
-            return View("Cita",cita);
+            return View("Cita");
         }
 
     }
