@@ -38,6 +38,12 @@ namespace vertivina.Controllers
 
             return View();
         }
+        public IActionResult Servicios()
+        {
+            ViewData["Message"] = "Your contact page.";
+
+            return View();
+        }
          public IActionResult Cita()
         {
             ViewData["Message"] = "Registra aqui tu cita";
