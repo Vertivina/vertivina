@@ -22,7 +22,7 @@
   },
   "targets": {
     ".NETCoreApp,Version=v2.0": {
-      "vertivina/1.0.0": {
+      "pangu/1.0.0": {
         "dependencies": {
           "Microsoft.AspNetCore.All": "2.0.8",
           "Microsoft.NETCore.App": "2.0.0",
@@ -30,10 +30,10 @@
           "MySql.Data.EntityFrameworkCore": "6.10.8"
         },
         "runtime": {
-          "vertivina.dll": {}
+          "pangu.dll": {}
         },
         "compile": {
-          "vertivina.dll": {}
+          "pangu.dll": {}
         }
       },
       "Libuv/1.10.0": {
@@ -4889,7 +4889,7 @@
     }
   },
   "libraries": {
-    "vertivina/1.0.0": {
+    "pangu/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

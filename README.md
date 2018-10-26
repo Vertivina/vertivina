@@ -16,8 +16,9 @@ Recordatorio: No borren las migraciones a menos que sea una verdadera emergencia
 
   dotnet aspnet-codegenerator controller -name [Nombre de nuevo controlador] -m [Clase] -dc [Clase contexto] --relativeFolderPath     Controllers --useDefaultLayout --referenceScriptLibraries 
  <br/>
- Si existe algun problema con los comandos:
- *Asegurense de tener su .Net core actualizado
- *Realizen el dotnet restore
+ Si existe algun problema con los comandos: <br/>
+ *Asegurense de tener su .Net core actualizado (la ultima version es 2.1) <br/>
+ *Realizen el dotnet restore <br/>
+ *Si existen errores incluso despues de restaurar los paquetes, reinicen el editor
  
  
