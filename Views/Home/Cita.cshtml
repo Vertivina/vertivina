@@ -1,6 +1,7 @@
 ﻿
 @{
     ViewData["Title"] = "Cita";
+    Layout="~/Views/Shared/_Layout.cshtml";
 }
 @model vertivina.Models.Cita
 
@@ -27,6 +28,7 @@ $(document).ready(function(){
 })
 </script>
 </head> 
+<body>
 <div class="container"> 
     <div class="row">
         <div class="col-md-6 col-md-offset-4">
@@ -63,8 +65,8 @@ $(document).ready(function(){
   
 
 <div class="container">
-   <div class="row">
-    <div class="col-md-6 col-md-offset-3">
+   <div class="row" >
+    <div class="col-md-6 col-md-offset-3" style="background-color:peru; padding:15px;box-shadow: 0 0 20px blue;">
         <form asp-action="Create" asp-controller="Cita">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
@@ -150,3 +152,4 @@ $(document).ready(function(){
 
     </div>
 </div>
+</body>
