@@ -2,69 +2,103 @@
 @{
     ViewData["Title"] = "Servicio";
 }
+<style>
+.ef:hover {-webkit-transform:scale(0.7);transform:scale(0.7);
+border-radius:25px;padding:3px;border:solid black 1px;	
+transition:all .5s ease-in-out;}
 
+.color:hover{
+    background-color:orange; 
+    transition:all .5s ease-in-out;
+}
+
+img{
+    border-radius:25px;padding:3px;border:solid black 1px;
+}
+</style>
 <h1>@ViewData["Message20"]</h1>
 
-<div class="body-content">
+<div class="body-content" >
 
   <br>
-<div class="row" style="padding:15px;box-shadow: 0 0 20px blue;">
+<div class="row" style="padding:15px;box-shadow: 0 0 20px blue;border-radius:15px;background-color: lightblue;">
      <div class="thumbnail col-md-offset-1 col-md-5 col-sm-12  col-xs-12" style="opacity:0.7">
             <div class="caption">
-                <h3 style="text-align:center">Peluqueria para Mascotas</h3>
-                     <p>Realizamos cortes y pedigree x2 <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni voluptatum sequi deleniti dolorum earum enim natus vel ea et dignissimos hic ipsam, quos beatae numquam omnis facere doloribus animi soluta. </p>  
+                <h3 style="text-align:center;">Baños y corte para mascotas</h3>
+                    <br>
+                    <br>
+                     <p>
+                        La frecuencia del baño en perros siempre ha sido un tema controversial ya que se pueden encontrar recomendaciones tanto de llevarlo a cabo de cada semana, hasta quienes opinan que a lo sumo cada dos meses. 
+                        De la misma manera el tema de corte de pelo varía según la raza y especie de la mascota ; donde unos requeriran mayores cuidados al realizar la tarea. 
+                     </p>  
             </div>
     </div>
      <div class="col-md-offset-1 col-md-4 col-xs-4 col-sm-offset-4 col-xs-offset-3" >
-        <img class="ef img-fluid" src="~/images/cuatro.jpg" alt="...">
+        <img class="ef img-responsive" src="~/images/cuatro.jpg" alt="...">
     </div>
  </div>  
  <br>
- <div class="row" style="background-color: rgb(187, 226, 183);box-shadow: 0 0 20px rgb(32, 245, 4);padding:15px;">
+ <div class="row" style="background-color: rgb(187, 226, 183);box-shadow: 0 0 20px rgb(32, 245, 4);padding:15px;border-radius:15px;">
      <div class="thumbnail col-md-offset-1 col-md-5 col-sm-12  col-xs-12" style="opacity:0.7">
             <div class="caption">
-                <h3 style="text-align:center">Cirugia</h3>
-                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero adipisci magni dicta dolorem molestias, corrupti illo voluptatum, sequi laborum nihil praesentium commodi provident ad culpa illum pariatur debitis, a possimus.</p>
+                <h3 style="text-align:center">Cirugía</h3>
+                     <p>
+                         Estamos preparados para cualquier tipo de cirugías programadas o de emergencia. Además somos un centro veterinario especializado en cirugía para perros y gatos.
+
+En nuestro quirófano disponemos de un equipo anestésico con ventilación controlada que nos permite la máxima monitorización del paciente anestesiado,  
+utilizamos la anestesia multimodal, es decir, la unión de varias técnicas anestésicas (inhalatoria e intravenosa) lo que aporta una mayor seguridad  consiguiendo una recuperación más rápida  del paciente.
+                     </p>
             </div>
     </div>
      <div class="col-md-offset-1 col-md-4 col-xs-4 col-sm-offset-4 col-xs-offset-3" >
-        <img class="ef img-fluid" src="~/images/cuatro.jpg" alt="...">
+        <img class="ef img-responsive" src="~/images/uno.jpg" alt="...">
     </div>
  </div>  
  <br>
- <div class="row" style="background-color: rgb(243, 191, 191);box-shadow: 0 0 20px rgb(245, 4, 4);padding:15px;">
+ <div class="row" style="background-color: rgb(243, 191, 191);box-shadow: 0 0 20px rgb(245, 4, 4);padding:15px;border-radius:15px;">
      <div class="thumbnail col-md-offset-1 col-md-5 col-sm-12  col-xs-12" style="opacity:0.7">
             <div class="caption">
                 <h3 style="text-align:center">Consultas de Especialidad</h3>
-                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero adipisci magni dicta dolorem molestias, corrupti illo voluptatum, sequi laborum nihil praesentium commodi provident ad culpa illum pariatur debitis, a possimus.</p>
+                     <p>
+                         Somos una veterinaria especialista en perros , gatos y mascotas exóticas. Nuestros años de experiencia y nuestros clientes avalan nuestro trabajo.
+                         Brindamos asistencia médica de estas mascotas y asesoramiento en el manejo de estas especies no convencionales.
+                         Atención para todo tipo de ave, reptil, roedor y mascotas convecionales.
+                     </p>
             </div>
     </div>
      <div class="col-md-offset-1 col-md-4 col-xs-4 col-sm-offset-4 col-xs-offset-3" >
-        <img class="ef img-fluid" src="~/images/cuatro.jpg" alt="...">
+        <img class="ef img-responsive" src="~/images/dos.jpg" alt="...">
     </div>
  </div>  
  <br>
- <div class="row" style="background-color: rgb(245, 247, 178);box-shadow: 0 0 20px rgba(240, 255, 35, 0.993);padding:15px;">
+ <div class="row" style="background-color: rgb(245, 247, 178);box-shadow: 0 0 20px rgba(240, 255, 35, 0.993);padding:15px;border-radius:15px;">
      <div class="thumbnail col-md-offset-1 col-md-5 col-sm-12  col-xs-12" style="opacity:0.7">
             <div class="caption">
                 <h3 style="text-align:center">Internamientos</h3>
-                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero adipisci magni dicta dolorem molestias, corrupti illo voluptatum, sequi laborum nihil praesentium commodi provident ad culpa illum pariatur debitis, a possimus.</p>
+                     <p>
+                         <br> <br> 
+                         Tu mascota podrá quedarse con nosotros en caso que tengas que viajar por vacaciones, trabajo, tengas una fiesta, o simplemente quieras que pasen unos días disfrutando del sol en el campo libres de caniles durante el día, 
+                         vivimos aquí y los atendemos para que ellos también tengan sus vacaciones.
+                     </p>
             </div>
     </div>
      <div class="col-md-offset-1 col-md-4 col-xs-4 col-sm-offset-4 col-xs-offset-3" >
-        <img class="ef img-fluid" src="~/images/cuatro.jpg" alt="...">
+        <img class="ef img-responsive" src="~/images/cinco.jpg" alt="...">
     </div>
  </div>  
  <br>
- <div class="row" style="background-color: rgb(241, 220, 163);box-shadow: 0 0 20px rgb(245, 189, 4);padding:15px;">
+ <div class="row" style="background-color: rgb(241, 220, 163);box-shadow: 0 0 20px rgb(245, 189, 4);padding:15px;border-radius:15px;">
      <div class="thumbnail col-md-offset-1 col-md-5 col-sm-12  col-xs-12" style="opacity:0.7">
             <div class="caption">
                 <h3 style="text-align:center">Laboratorio</h3>
-                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero adipisci magni dicta dolorem molestias, corrupti illo voluptatum, sequi laborum nihil praesentium commodi provident ad culpa illum pariatur debitis, a possimus.</p>
+                     <p>
+                         Hoy en nuestras clínica , contamos con un servicio completo de laboratorio interno que nos da la capacidad de ejecutar una serie de pruebas valiosas incluidos los de química sanguínea, hemograma completo , análisis de orina completos y muchas otras en minutos , Esto significa que podemos obtener un 
+                         diagnóstico en un corto período de tiempo que nos permite discutir el tratamiento adecuado para su mascota.
+                     </p>
             </div>
     </div>
      <div class="col-md-offset-1 col-md-4 col-xs-4 col-sm-offset-4 col-xs-offset-3" >
-        <img class="ef img-fluid" src="~/images/cuatro.jpg" alt="...">
+        <img class="ef img-responsive" src="~/images/tres.jpg" alt="...">
     </div>
  </div>      
 
