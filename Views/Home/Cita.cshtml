@@ -16,17 +16,17 @@
 <script type="text/javascript">
 $(document).ready(function(){
 
-    $("#tc1").click(function(event){
+   
 
-        $('#dir').show("1000");
+    $(".click").click(function(event){
+        if($('#dir').prop('disabled')){
+             $('#dir').prop('disabled',false);
+        }else{
+             $('#dir').prop('disabled',true);
+        }
+      
 
     })
-    $("#tc2").click(function(event){
-
-        $('#dir').hide("1000");
-
-    })
-
 
 })
 
@@ -116,6 +116,7 @@ $(document).ready(function(){
                  <select  class="form-control" asp-for="Hora">
                     <option value="12:30">12:30.</option>
                     <option value="14:45">14:45</option>
+                    <option value="17:30">17:30</option>
                 </select>
                 
             </div>
@@ -126,21 +127,24 @@ $(document).ready(function(){
             <div class="form-group">
                  <label for="">Tipo de mascota:</label>
                  <select  class="form-control" asp-for="TipoMascota">
-                    <option value="T1">Mascota 1.</option>
-                    <option value="T2">Mascota 2.</option>
+                    <option value="Perro">Perro</option>
+                    <option value="Gato">Gato</option>
                 </select>
                 
             </div>
             <div class="form-group">
                 <label for="">Tipo de cita:</label>
                  <select  class="form-control" asp-for="TipoCita">
-                    <option value="C1" id="tc1">Veterinaria</option>
-                    <option value="C2" id="tc2">A domicilio</option>
+                    <option value="Cirugias" id="tc1">Cirugias</option>
+                    <option value="Chequeo" id="tc2">Chequeo</option>
+                    <option value="Revision" id="tc3">Revision</option>
+                    <option value="PromPerros" id="tc4">Promoción perros</option>
                 </select>
                 
             </div>
-            <div class="form-group" id="dir">
-                <input type="text" placeholder="Dirección" class="form-control" asp-for="Direccion">
+            <div class="form-group" >
+                <input type="text" placeholder="Dirección" class="form-control" asp-for="Direccion" id="dir">
+                <input type="checkbox" class="click"/> En el local
             </div>
              <div class="form-group">
                 <input type="submit" value="Crear" class="btn btn-default" />
