@@ -56,6 +56,12 @@ namespace vertivina.Controllers
 
             return View();
         }
+         public IActionResult Adopcion()
+        {
+            ViewData["Message"] = "Preguntas frecuentes";
+
+            return View();
+        }
 
 
         public IActionResult Error()

@@ -1,0 +1,74 @@
+@{
+    ViewData["Title"] = "Adopcion";
+     Layout="~/Views/Shared/_Layout.cshtml";
+}
+<h2>@ViewData["Title"]</h2>
+<style>
+    #info{
+        background: black;
+        color: beige;
+        text-align: center;
+        padding: 20px;
+    }
+    #info.contenedor{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .info-mascota{
+        margin: 20px;
+    }
+
+    .info-mascota img{
+        width: 180px;
+        height: 180px;
+        border-radius: 50%;
+        border: 7px solid white;
+    }
+
+</style>
+
+
+<section id="info">
+<h3>Para muchos de nosotros las mascotas no son simples compañeros, son miembros de la familia.</h3>
+<div class="contenedor">
+    <div class="info-mascota">
+        <img src="../images/max.jpg">
+        <h4>Max</h4>
+    </div>
+
+    <div class="info-mascota">
+        <img src="../images/jerry.jpg">
+        <h4>Jerry</h4>
+    </div>
+
+    <div class="info-mascota">
+        <img src="../images/tom.jpg">
+        <h4>Tom</h4>
+    </div>
+
+    <div class="info-mascota">
+        <img src="../images/sam.jpg" >
+        <h4>Sam</h4>
+    </div>
+
+    <div class="info-mascota">
+        <img src="../images/cielo.jpg">
+        <h4>Cielo</h4>
+    </div>
+
+
+    <div class="info-mascota">
+        <img src="../images/arom.jpg">
+        <h4>Aarom</h4>
+    </div>
+
+
+    <div class="info-mascota">
+        <img src="../images/galleta.jpg" >
+        <h4>Galleta</h4>
+    </div>
+</div>
+</section>
+
+
