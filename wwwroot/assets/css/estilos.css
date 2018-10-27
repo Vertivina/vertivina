@@ -7,9 +7,9 @@ background-image: url('~/images/fondo.jpg') center center cover no-repeat fixed;
 
 @media only screen and (max-width: 767px) {
 
-body {
+.body {
 
-background-image: url('~/images/fondito.jpg');
+background-image: url(images/fondito.jpg);
 background-color: yellow;
 
 }
