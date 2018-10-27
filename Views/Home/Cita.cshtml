@@ -29,26 +29,9 @@ $(document).ready(function(){
 </script>
 </head> 
 <body>
-<div class="container"> 
-    <div class="row">
-        <div class="col-md-6 col-md-offset-4">
-            <h1 class="center">@ViewData["Title"]</h1>
-           
-        </div>
 
-    </div>
 
-</div>
-
-<div class="containerDoc">
-    <div id="slider">
-        
-        <div><img src="~/images/aarom.jpg" height="200px" width="200px"></div>  
-        <div><img src="~/images/alvaro.jpg" height="200px" width="200px"></div>   
-        <div><img src="~/images/cesar.jpg" height="200px" width="200px"></div>   
-        <div><img src="~/images/julio.jpg" height="200px" width="200px"></div>    
-          </div>
-</div>   
+  
 <script>
       $(function(){
         $('#slider div:gt(0)').hide();
@@ -64,9 +47,9 @@ $(document).ready(function(){
         
   
 
-<div class="container">
+<div class="container" style="margin-top:85px;">
    <div class="row" >
-    <div class="col-md-6 col-md-offset-3" style="background-color:peru; padding:15px;box-shadow: 0 0 20px blue;">
+    <div class="col-md-6 " style="background-color:rgba(103, 203, 216, 0.788); padding:30px;box-shadow: 0 0 20px blue;border-radius:25px;">
         <form asp-action="Create" asp-controller="Cita">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
@@ -150,6 +133,27 @@ $(document).ready(function(){
 
         </div>
 
+            
+        <div class="col-md-offset-2 col-md-4">
+                <div class="containerDoc">
+                <div id="slider">
+
+        <div><img style="border-radius:15px;" src="~/images/aarom.jpg" height="200px" width="200px"></div>  
+        <div><img style="border-radius:15px;" src="~/images/alvaro.jpg" height="200px" width="200px"></div>   
+        <div><img style="border-radius:15px;" src="~/images/cesar.jpg" height="200px" width="200px"></div>   
+        <div><img style="border-radius:15px;" src="~/images/julio.jpg" height="200px" width="200px"></div>    
+
+
+                </div>
+            </div> 
+        </div>
     </div>
 </div>
+
+
+
+ 
+
+
+
 </body>
