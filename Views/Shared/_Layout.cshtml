@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="~/assets/css/font-awesome.min.css"> 
 	<link rel="stylesheet" type="text/css" href="~/assets/css/hexagons.min.css"> 
-    <link rel="stylesheet" type="text/css" href="~/assets/css/estilos.css"> 
+     
     <title>@ViewData["Title"] - Vertivina</title>
   
 
@@ -21,14 +21,19 @@
     </environment>
     <style>
         .verti{
-            padding-: 100px;
+            
             border-radius:25px;padding:3px;border:solid black 1px;
+        
+            }
+.logo{
+    background: url(../../images/fondo.jpg);
+
 }
     </style>
 
     
 </head>
-<body style="background-image: url(images/fondo.jpg);" >
+<body class="logo">
     <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
@@ -47,7 +52,7 @@
                     <li style="font-weight:bold"><a asp-area="" asp-controller="Productos2" asp-action="Index">Accesorios</a></li>
                     <li style="font-weight:bold"><a asp-area="" asp-controller="Home" asp-action="Contact">Veterinaria</a></li>
                     <li style="font-weight:bold"><a asp-area="" asp-controller="Home" asp-action="Cita">Cita</a></li>
-                    <li style="font-weight:bold"><a asp-area="" asp-controller="Home" asp-action="About">Adopción</a></li>
+                    <li style="font-weight:bold"><a asp-area="" asp-controller="Home" asp-action="Adopcion">Adopción</a></li>
                     <li style="font-weight:bold"><a asp-area="" asp-controller="Contactos" asp-action="Create">Contáctanos</a></li>
                     <li style="font-weight:bold"><a asp-area="" asp-controller="Servicio" asp-action="Index">Servicios</a></li>
                     <li style="font-weight:bold"><a asp-area="" asp-controller="Servicio" asp-action="Index">Promociones</a></li>

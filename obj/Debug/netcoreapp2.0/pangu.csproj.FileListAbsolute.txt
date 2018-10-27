@@ -9,3 +9,14 @@ C:\Users\HP\Documents\GitHub\vertivina\obj\Debug\netcoreapp2.0\pangu.AssemblyInf
 C:\Users\HP\Documents\GitHub\vertivina\obj\Debug\netcoreapp2.0\pangu.AssemblyInfo.cs
 C:\Users\HP\Documents\GitHub\vertivina\obj\Debug\netcoreapp2.0\pangu.dll
 C:\Users\HP\Documents\GitHub\vertivina\obj\Debug\netcoreapp2.0\pangu.pdb
+C:\Users\julio\Desktop\vertivina-1\bin\Debug\netcoreapp2.0\pangu.deps.json
+C:\Users\julio\Desktop\vertivina-1\bin\Debug\netcoreapp2.0\pangu.runtimeconfig.json
+C:\Users\julio\Desktop\vertivina-1\bin\Debug\netcoreapp2.0\pangu.runtimeconfig.dev.json
+C:\Users\julio\Desktop\vertivina-1\bin\Debug\netcoreapp2.0\pangu.dll
+C:\Users\julio\Desktop\vertivina-1\bin\Debug\netcoreapp2.0\pangu.pdb
+C:\Users\julio\Desktop\vertivina-1\obj\Debug\netcoreapp2.0\pangu.csprojAssemblyReference.cache
+C:\Users\julio\Desktop\vertivina-1\obj\Debug\netcoreapp2.0\pangu.csproj.CoreCompileInputs.cache
+C:\Users\julio\Desktop\vertivina-1\obj\Debug\netcoreapp2.0\pangu.AssemblyInfoInputs.cache
+C:\Users\julio\Desktop\vertivina-1\obj\Debug\netcoreapp2.0\pangu.AssemblyInfo.cs
+C:\Users\julio\Desktop\vertivina-1\obj\Debug\netcoreapp2.0\pangu.dll
+C:\Users\julio\Desktop\vertivina-1\obj\Debug\netcoreapp2.0\pangu.pdb
