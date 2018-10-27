@@ -20,6 +20,7 @@ Recordatorio: No borren las migraciones a menos que sea una verdadera emergencia
  *Asegurense de tener su .Net core actualizado (la ultima version es 2.1) <br/>
  *Realizen el dotnet restore <br/>
  *Revisen que el paquete tools.dotnet este ahi <br/>
+ 
  ```
    <ItemGroup> 
      <DotNetCliToolReference Include="Microsoft.EntityFrameworkCore.Tools.DotNet" Version="2.0.3" /> 
@@ -27,6 +28,8 @@ Recordatorio: No borren las migraciones a menos que sea una verdadera emergencia
   </ItemGroup>
 
 ```
+Estos van en el segundo grupo ItemGroup del csproj
+
 O alternativamente, bajense el paquete de entity framework core completo <br/>
 ```
 <ItemGroup>
@@ -35,6 +38,9 @@ O alternativamente, bajense el paquete de entity framework core completo <br/>
   </ItemGroup>
 
 ```
+Estos van al primer ItemGroup csproj
+
+Recuerden: estos paquetes deben estar en el csproj
  *Si existen errores incluso despues de restaurar los paquetes, reinicen el editor
  
  
