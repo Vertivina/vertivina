@@ -2,6 +2,8 @@
     ViewData["Title"] = "Faq";
      Layout="~/Views/Shared/_Layout.cshtml";
 }
+
+@model vertivina.Models.Faq
 <h2>@ViewData["Title"]</h2>
 <h3>@ViewData["Message"]</h3>
 
@@ -201,7 +203,7 @@
                             <br>
                             <br>
                             <br>
-                            
+                
                            
                            
                            
@@ -217,7 +219,17 @@
                                      <iframe style="padding:60px;padding-bottom:140px;" width="560" height="315" src="https://www.youtube.com/embed/sWOKuxZ84_k" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
     </div>
                             </center>
+       <form name="Faq" asp-action="Home" method="GET" class="form-group" >
+                            <div class="col-md-offset-2 col-md-6">
+                                Tu nombre:<input type="text" name="contactoNombre" class="form-control">
+                                Correo:<input type="email" name="email" class="form-control">
+                                Cuentanos tu queja:<textarea name="msj" id="" cols="30" rows="10" placeholder="ingrese msj" class="form-control">
 
+                                </textarea>
+                                <br>
+                                <input type="submit" name="btnEnviar" value="enviar">
+                            </div>
+                    </form>  
 </div>
 </div>
 </body>
