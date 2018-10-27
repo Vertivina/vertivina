@@ -20,7 +20,7 @@ namespace vertivina.Controllers
         }
 
         // GET: Servicios
-        public async Task<IActionResult> Index(string searchString)
+        /*public async Task<IActionResult> Index(string searchString)
         {
              var servicios = from m in _context.Servicio
                  select m;
@@ -30,6 +30,9 @@ namespace vertivina.Controllers
             }
 
             return View(await servicios.ToListAsync());
+        } */
+        public IActionResult Index(){
+            return View();
         }
 
         // GET: Servicios/Details/5

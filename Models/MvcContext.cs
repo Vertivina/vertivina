@@ -18,6 +18,7 @@ namespace Models.MvcContext
         public DbSet<vertivina.Models.Servicio> Servicio{get; set;}
 
         public DbSet<vertivina.Models.Contacto> Contacto{get; set;}
+        public DbSet<vertivina.Models.Producto2> Producto2{get; set;}
     }
 
 
