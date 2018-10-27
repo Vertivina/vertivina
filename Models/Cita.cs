@@ -17,7 +17,7 @@ namespace vertivina.Models
 
         [Required]
         public int Telefono{get; set;}
-
+        [Required]
         public string TipoTelefono{get; set;}
 
         public string Doctor{get; set;}

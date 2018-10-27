@@ -1,11 +1,13 @@
 using System;
+using System.ComponentModel.DataAnnotations;
 
 namespace vertivina.Models
 {
     public class Mascota
     {
+        [Required]
         public string nombre {get; set;}
-        
+        [Required]
         public string tipoMascota{get; set;}
 
 
