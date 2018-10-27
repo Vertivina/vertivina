@@ -19,17 +19,20 @@ Recordatorio: No borren las migraciones a menos que sea una verdadera emergencia
  Si existe algun problema con los comandos: <br/>
  *Asegurense de tener su .Net core actualizado (la ultima version es 2.1) <br/>
  *Realizen el dotnet restore <br/>
- *Revisen que el paquete tools.dotnet este ahi
+ *Revisen que el paquete tools.dotnet este ahi <br/>
  
-   <ItemGroup>
-     <DotNetCliToolReference Include="Microsoft.EntityFrameworkCore.Tools.DotNet" Version="2.0.3" />
-    <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.4" />
-  </ItemGroup>
+   <ItemGroup> <br/>
+     <DotNetCliToolReference Include="Microsoft.EntityFrameworkCore.Tools.DotNet" Version="2.0.3" /> <br/>
+    <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.4" /> <br/>
+  </ItemGroup> <br/>
+<br/>
+O alternativamente, bajense el paquete de entity framework core completo <br/>
+<ItemGroup><br/>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.1.4" /><br/>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.1.4" /><br/>
+  </ItemGroup><br/>
+<br/>
 
-O alternativamente, bajense el paquete de entity framework core completo
-
-
-</Project>
  *Si existen errores incluso despues de restaurar los paquetes, reinicen el editor
  
  
