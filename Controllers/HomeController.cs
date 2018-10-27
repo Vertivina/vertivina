@@ -50,6 +50,13 @@ namespace vertivina.Controllers
 
             return View();
         }
+          public IActionResult Faq()
+        {
+            ViewData["Message"] = "Preguntas frecuentes";
+
+            return View();
+        }
+
 
         public IActionResult Error()
         {
