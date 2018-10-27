@@ -4,13 +4,11 @@
     ViewData["Title"] = "Index";
 }
 
-<h2>Index</h2>
+<h2>Lista de promociones</h2>
 
 
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
+
 
 <div class="container"> 
 
@@ -26,6 +24,9 @@
 <table class="table">
     <thead>
         <tr>
+                 <th>
+                    Servicio
+                </th>
                 <th>
                     @Html.DisplayNameFor(model => model.Nombre)
                 </th>
@@ -44,15 +45,18 @@
 @foreach (var item in Model) {
         <tr>
             <td>
+               <img class="img-responsive" src="~/images/por-especie-perro.jpg" alt="...">
+            </td>
+            <td>
                 @Html.DisplayFor(modelItem => item.Nombre)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Precio)
             </td>
             <td>
-                <a asp-action="Edit" asp-route-id="@item.ID">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.ID">Detalles</a> |
-                <a asp-action="Delete" asp-route-id="@item.ID">Delete</a>
+                
+                <a asp-action="Details" asp-route-id="@item.ID">Detalles</a> 
+                
             </td>
         </tr>
 }

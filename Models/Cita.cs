@@ -7,6 +7,8 @@ namespace vertivina.Models
 {
     public class Cita{
         public int ID{get; set;}
+
+       
         [Required]
         [MinLength(4)]
         public string Nombre { get; set; }
