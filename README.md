@@ -25,7 +25,7 @@ Recordatorio: No borren las migraciones a menos que sea una verdadera emergencia
      <DotNetCliToolReference Include="Microsoft.EntityFrameworkCore.Tools.DotNet" Version="2.0.3" /> 
     <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.4" /> 
   </ItemGroup>
-<br/>
+
 ```
 O alternativamente, bajense el paquete de entity framework core completo <br/>
 ```
@@ -33,7 +33,7 @@ O alternativamente, bajense el paquete de entity framework core completo <br/>
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.1.4" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.1.4" />
   </ItemGroup>
-<br/>
+
 ```
  *Si existen errores incluso despues de restaurar los paquetes, reinicen el editor
  
