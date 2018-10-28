@@ -219,11 +219,11 @@
                                      <iframe style="padding:60px;padding-bottom:140px;" width="560" height="315" src="https://www.youtube.com/embed/sWOKuxZ84_k" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
     </div>
                             </center>
-       <form name="Faq" asp-action="Home" method="GET" class="form-group" >
+       <form asp-action="Faq" method="Post" class="form-group" >
                             <div class="col-md-offset-2 col-md-6">
-                                Tu nombre:<input type="text" name="contactoNombre" class="form-control">
-                                Correo:<input type="email" name="email" class="form-control">
-                                Cuentanos tu queja:<textarea name="msj" id="" cols="30" rows="10" placeholder="ingrese msj" class="form-control">
+                                Tu nombre:<input type="text" class="form-control" asp-for="contactoNombre">
+                                Correo:<input type="email" asp-for="email" class="form-control">
+                                Cuentanos tu queja:<textarea asp-for="msj" id="" cols="30" rows="10" placeholder="ingrese msj" class="form-control">
 
                                 </textarea>
                                 <br>

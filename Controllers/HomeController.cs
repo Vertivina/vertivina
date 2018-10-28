@@ -53,18 +53,19 @@ namespace vertivina.Controllers
         public IActionResult Faq(){
             return View();
         }
-        /* public async Task<IActionResult> Faq([Bind("contactoNombre,email,msj")] Faq faq)
+        public async Task<IActionResult> Faq([Bind("contactoNombre,email,msj")] Faq faq)
         {
             if (ModelState.IsValid)
             {
                 _context.Add(faq);
                 await _context.SaveChangesAsync();
-                return RedirectToAction("Index", "Home");
+                return RedirectToAction("Index");
             }
 
-            return RedirectToAction("Faq", "Home");
+            return View(faq);
         }
- */         public IActionResult Adopcion()
+
+          public IActionResult Adopcion()
         {
             ViewData["Message"] = "Preguntas frecuentes";
 

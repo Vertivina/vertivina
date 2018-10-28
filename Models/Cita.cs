@@ -22,7 +22,7 @@ namespace vertivina.Models
 
         public string Doctor{get; set;}
         [Required]
-        [DisplayFormat(DataFormatString = "{0:yyy-MM-dd}", ApplyFormatInEditMode = true)]
+        [DisplayFormat(DataFormatString = "{0:dd-mm-yyyy}", ApplyFormatInEditMode = true)]
         public DateTime Fecha{get; set;}
 
         public string Hora{ get; set; }
