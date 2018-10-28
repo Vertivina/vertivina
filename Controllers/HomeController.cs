@@ -53,6 +53,9 @@ namespace vertivina.Controllers
         public IActionResult Faq(){
             return View();
         }
+        
+        [HttpPost]
+        [ValidateAntiForgeryToken]
         public async Task<IActionResult> Faq([Bind("contactoNombre,email,msj")] Faq faq)
         {
             if (ModelState.IsValid)
