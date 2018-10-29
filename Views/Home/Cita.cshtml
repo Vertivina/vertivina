@@ -48,14 +48,17 @@ $(document).ready(function(){
   
 
 <div class="container" style="margin-top:85px;">
+
    <div class="row" >
     <div class="col-md-6 " style="background-color:rgba(103, 203, 216, 0.788); padding:30px;box-shadow: 0 0 20px blue;border-radius:25px;">
+        <h2>Registre su cita aqui</h2>
         <form asp-action="Create" asp-controller="Cita">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
 
                 <input type="text" asp-for="Nombre" placeholder="Nombre" class="form-control">
                  <span asp-validation-for="Nombre" class="text-danger"></span>
+                 
             </div>
             <div class="form-group">
                 
@@ -97,13 +100,14 @@ $(document).ready(function(){
             <div class="form-group">
                 <label for="">Horario:</label>
                  <select  class="form-control" asp-for="Hora">
-                    <option value="12:30">12:30.</option>
+                    <option value="12:30">12:30</option>
                     <option value="14:45">14:45</option>
                 </select>
                 
             </div>
             <div class="form-group">
-                <input type="date" placeholder="Fecha" class="form-control" asp-for="Fecha">                
+                <input type="date" placeholder="Fecha" class="form-control" asp-for="Fecha">  
+                <span asp-validation-for="Fecha" class="text-danger"></span>              
             </div>
                         
             <div class="form-group">

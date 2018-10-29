@@ -219,17 +219,33 @@
                                      <iframe style="padding:60px;padding-bottom:140px;" width="560" height="315" src="https://www.youtube.com/embed/sWOKuxZ84_k" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
     </div>
                             </center>
-       <form asp-action="Faq" asp-controller="Home" class="form-group" >
-                            <div class="col-md-offset-2 col-md-6">
-                                Tu nombre:<input type="text" class="form-control" asp-for="contactoNombre">
-                                Correo:<input type="email" asp-for="email" class="form-control">
-                                Cuentanos tu queja:<textarea asp-for="msj" id="" cols="30" rows="10" placeholder="ingrese msj" class="form-control">
+                      <div class="row">   
+                        <div class="col-md-offset-2 col-md-6">
+                            <form asp-action="Faq" asp-controller="Home" class="form-group" >
+                                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                                <h3>Quejas</h3>
+                                <div class="form-group">
+                                     Tu nombre:<input type="text" class="form-control" asp-for="contactoNombre">
+                                     <span asp-validation-for="contactoNombre" class="text-danger"></span>
+                                </div>
+                                 <div class="form-group">
+                                    Correo:<input type="email" asp-for="email" class="form-control">
+                                    <span asp-validation-for="email" class="text-danger"></span>
+                                </div>
+                                 <div class="form-group">
+                                    <textarea asp-for="msj" id="" cols="30" rows="10" placeholder="Cuentanos tu queja" class="form-control"></textarea>
+                                    <span asp-validation-for="msj" class="text-danger"></span>
+                                </div>
+                               <div class="form-group">
+                                <input type="submit" name="btnEnviar" value="Enviar">
+                                </div>
 
-                                </textarea>
+                               
                                 <br>
-                                <input type="submit" name="btnEnviar" value="enviar">
+                                </form> 
                             </div>
-                    </form>  
+                            </div>   
+                     
 </div>
 </div>
 </body>
