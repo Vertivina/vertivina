@@ -50,6 +50,20 @@ namespace vertivina.Controllers
 
             return View();
         }
+
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Cita([Bind("Nombre,Mascota,Telefono,TipoTelefono,Doctor,Fecha,Hora,TipoMascota,TipoCita,Direccion")] Cita cita)
+        {
+            if (ModelState.IsValid)
+            {
+                _context.Add(cita);
+                await _context.SaveChangesAsync();
+                return RedirectToAction("Index");
+            }
+           return View(cita);
+        }
         public IActionResult Faq(){
             return View();
         }

@@ -26,6 +26,9 @@ namespace vertivina.Controllers{
             return View();
         }
 
+        public IActionResult Create(){
+            return View();
+        }
        
 
 
@@ -39,7 +42,7 @@ namespace vertivina.Controllers{
                 await _context.SaveChangesAsync();
                 return RedirectToAction("Index","Home");
             }
-           return RedirectToAction("Cita","Home");
+           return View();
         }
 
     }

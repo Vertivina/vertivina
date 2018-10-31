@@ -52,8 +52,8 @@ $(document).ready(function(){
    <div class="row" >
     <div class="col-md-6 " style="background-color:rgba(103, 203, 216, 0.788); padding:30px;box-shadow: 0 0 20px blue;border-radius:25px;">
         <h2>Registre su cita aqui</h2>
-        
-        <form asp-action="Create" asp-controller="Cita">
+       
+        <form asp-action="Cita" >
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
 
@@ -80,6 +80,7 @@ $(document).ready(function(){
                     </div>
                     <div class="col-md-7">
                          <input type="number" placeholder="Telefono" class="form-control" asp-for="Telefono">
+                         <span asp-validation-for="Telefono" class="text-danger"></span>
                     </div>
                     <div class="col-md-4">
                         <select  class="form-control" asp-for="TipoTelefono">
