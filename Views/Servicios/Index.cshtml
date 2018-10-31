@@ -15,53 +15,43 @@
     <div class="row" style="background-color:whitesmoke; padding:15px;box-shadow: 0 0 20px blue;"> 
         <div class="col-md-12">  
         <form asp-controller="Servicios" asp-action="Index">
-    <p>
+         <p>
         Buscar: <input type="text" name="SearchString">
         <input type="submit" value="Filter" />
-    </p>
-</form>
+            </p>
+            </form>
 
-<table class="table">
-    <thead>
-        <tr>
-                 <th>
-                    Servicio
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.Nombre)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.Precio)
-                </th>
-                <th>
-                    Más información
-                </th>
-               
-               
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
+
 @foreach (var item in Model) {
-        <tr>
-            <td>
-               <img class="img-responsive" src="~/images/por-especie-perro.jpg" alt="...">
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Nombre)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Precio)
-            </td>
-            <td>
-                
-                <a asp-action="Details" asp-route-id="@item.ID">Detalles</a> 
-                
-            </td>
-        </tr>
+
+    <div class="col-sm-4">  
+        <div class="product-image-wrapper">
+            <div class="single-products">
+                <div class="productinfo text-center">
+                    <img class="img-responsive" src="~/images/por-especie-perro.jpg" alt="...">
+                    <h2> 
+                         @Html.DisplayFor(modelItem => item.Nombre)
+                    </h2>
+                    <p>
+                         @Html.DisplayFor(modelItem => item.Precio)
+                    </p>
+                    <p>
+                        <a asp-action="Details" asp-route-id="@item.ID">Detalles</a> 
+                    </p>
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+    </div>
+
+
 }
-    </tbody>
-</table>
+
+
 
 </div>
 </div>
