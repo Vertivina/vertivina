@@ -19,6 +19,7 @@ Recordatorio: No borren las migraciones a menos que sea una verdadera emergencia
  Si existe algun problema con los comandos: <br/>
  *Asegurense de tener su .Net core actualizado (la ultima version es 2.1) <br/>
  *Realizen el dotnet restore <br/>
+ *Eliminen las carpetas obj y bin, despues realicen el build<br/>
  *Revisen que el paquete tools.dotnet este ahi <br/>
  
  ```
