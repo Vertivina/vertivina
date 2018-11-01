@@ -5,6 +5,7 @@ namespace vertivina.Models
 {
     public class Mascota
     {
+        public int Id { get; set; }
         [Required]
         public string nombre {get; set;}
         [Required]
