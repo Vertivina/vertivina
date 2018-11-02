@@ -10,9 +10,10 @@ using System;
 namespace vertivina.Migrations
 {
     [DbContext(typeof(MvcContext))]
-    partial class MvcContextModelSnapshot : ModelSnapshot
+    [Migration("20181101222157_MascotaAdopcion")]
+    partial class MascotaAdopcion
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -123,7 +124,7 @@ namespace vertivina.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Mascota");
+                    b.ToTable("Adopcion");
                 });
 
             modelBuilder.Entity("vertivina.Models.Producto", b =>

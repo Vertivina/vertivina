@@ -1,15 +1,17 @@
 using System;
+using System.ComponentModel.DataAnnotations;
 
 namespace vertivina.Models
 {
     public class Producto2
     {
-        public int ID { get; set; }
-        public string nombre { get; set; }
-        public int cantidad { get; set; }
-        public string descrip { get; set; }
-        public string tipo { get; set; }
-        public double precio { get; set; }
-        public DateTime? fecven { get; set; }
+        [Key]
+        public int Codigo { get; set; }
+        public string Nombre { get; set; }
+        public int Cantidad { get; set; }
+        public string Desc { get; set; }
+        public string Tipo { get; set; }
+        public double Precio { get; set; }
+        public DateTime? Fecven { get; set; }
     }
 }
