@@ -27,7 +27,14 @@
     }
 
 </style>
-
+<div><center>
+    <form asp-action="" method="GET">
+    <input type="text" name="buscar" class="form-control" 
+    value="@ViewBag.buscar" style="width: 300px;" placeholder="Busca que mascota adoptar"><br>
+    <button type="submit" class="btn btn-primary">Buscar</button><br><br>
+    </center>
+</form>
+</div>
 
 <section id="info">
 <h3>Para muchos de nosotros las mascotas no son simples compañeros, son miembros de la familia.</h3>

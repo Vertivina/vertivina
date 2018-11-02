@@ -88,11 +88,20 @@ namespace vertivina.Controllers
             return View(faq);
         }
 
-          public IActionResult Adopcion()
+          public IActionResult Adopcion(string buscar)
         {
-            ViewData["Message"] = "Preguntas frecuentes";
+            //ViewData["Message"] = "Preguntas frecuentes";
+            var mascota = _context.Mascota.AsQueryable();
+            
+            if(!string.IsNullOrEmpty(buscar)){
+                
+                mascota = mascota.Where(e => e.nombre.Contains(buscar) || e.tipoMascota.Contains(buscar));
+            }
 
-            return View();
+            ViewBag.buscar = buscar;
+            
+            return View(mascota.ToList());
+
         }
 
 
