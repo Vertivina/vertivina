@@ -50,6 +50,12 @@ namespace vertivina.Controllers
 
             return View();
         }
+        public IActionResult Comunidad()
+        {
+            ViewData["Message"] = "Your contact page.";
+
+            return View();
+        }
 
 
         [HttpPost]

@@ -13502,11 +13502,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Vert2\\vertivina\\pangu.csproj",
+      "projectUniqueName": "C:\\Vert3\\vertivina\\pangu.csproj",
       "projectName": "pangu",
-      "projectPath": "C:\\Vert2\\vertivina\\pangu.csproj",
+      "projectPath": "C:\\Vert3\\vertivina\\pangu.csproj",
       "packagesPath": "C:\\Users\\Carlos\\.nuget\\packages\\",
-      "outputPath": "C:\\Vert2\\vertivina\\obj\\",
+      "outputPath": "C:\\Vert3\\vertivina\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
