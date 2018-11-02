@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
 namespace vertivina.Models
@@ -9,8 +10,7 @@ namespace vertivina.Models
         [Required]
         public string nombre {get; set;}
         [Required]
-        public string tipoMascota{get; set;}
-
+        public string tipoMascota {get; set;}
 
         public Mascota(String nom, String tipM){
             nombre=nom;
