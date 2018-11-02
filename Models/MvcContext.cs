@@ -104,7 +104,7 @@ namespace Models.MvcContext
         public DbSet<Contacto> Contacto { get; set; }
         public DbSet<Producto2> Producto2 { get; set; }
         public DbSet<Faq> Faq { get; set; }
-        public DbSet<Mascota> Mascota {get; set; }
+        
     }
     #endregion
 }
