@@ -64,37 +64,33 @@
         <form asp-controller="Servicios" asp-action="Index">
          <p>
         Buscar: <input type="text" name="SearchString">
-        <input type="submit" value="Filter" />
+        <input type="submit" value="Buscar" />
             </p>
             </form>
 
 
 @foreach (var item in Model) {
 
-    <div class="col-sm-4">  
-        <div class="product-image-wrapper">
-            <div class="single-products">
-                <div class="productinfo ">
-                    <img class="img-responsive" src="~/images/por-especie-perro.jpg" alt="...">
-                    <h2> 
-                         @Html.DisplayFor(modelItem => item.Nombre)
-                    </h2>
-                    <p>
-                         @Html.DisplayFor(modelItem => item.Precio)
-                    </p>
-                    <p>
-                        <a asp-action="Details" asp-route-id="@item.ID">Detalles</a> 
-                    </p>
+	<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+			<div class="prise-box">
+			<img src="~/images/por-especie-perro.jpg" alt="imagen" class="img-responsive">
+			<div class="info-this">
+				<div class="left-box">
+				<h2> @Html.DisplayFor(modelItem => item.Nombre)
+					 </h2>
+				<a asp-action="Details" asp-route-id="@item.ID">Más detalles aqui</a>
+				</div>
+				<div class="right-box-up">
+					<div class="blue-box">
+						<span>Descuento de</span>
+						<h2>50%<sup></sup></h2>
+						</div>
+				</div>
+			</div>
+			</div>
+		</div>
 
-                </div>
-
-
-            </div>
-
-
-        </div>
-    </div>
-
+  
 
 }
 
@@ -114,7 +110,7 @@
 
 <div class="container">
     <div class="row">
-<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+	<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
 			<div class="prise-box">
 			<img src="https://www.njlcvef.org/sites/default/files/styles/400x200/public/images/web-water.png?itok=qdBYR9x_" alt="sdasdas">
 			<div class="info-this">
