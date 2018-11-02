@@ -132,7 +132,17 @@
 								</ul>
 							</div>
 						</div>
-						
+						<div>
+						<form asp-controller="Productos2" asp-action="Index">
+							<div class="form-group">
+        				 
+       						 	<input type="text" name="SearchString" placeholder="Buscar producto" class="form-control">
+           						</div>
+								   <div class="form-group">
+								<input type="submit" value="Buscar" class="btn btn-secondary"/>	
+								</div>
+            				</form>
+						</div>
 						<div class="price-range">
 							<h2>Rango de precios</h2>
 							<div class="well text-center">
@@ -144,7 +154,7 @@
 					</div>
 				</div>
 				
-				<div class="col-sm-9 padding-right">
+				<div class="col-sm-9 padding-right" style="background-color:rgba(103, 203, 216, 0.788)">
 					<div class="features_items">
 						<h2 class="title text-center"> Productos</h2>
 						<div class="col-sm-4">

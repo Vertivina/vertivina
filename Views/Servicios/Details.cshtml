@@ -7,14 +7,17 @@
 <h2>Detalles</h2>
 
 <div style=" background-color:rgba(184, 210, 214, 0.788);">
-    <h4>Servicio</h4>
-    <hr />
-    <dl class="dl-horizontal">
-        <dd>
-            <img class="img-responsive" src="~/images/por-especie-perro.jpg" alt="...">
+    <h4>Promoción</h4>
+    <br/>
+    <div class="container">
+    <div class="row">
+      <div class="col-md-3">
+          <img class="img-responsive" src="~/images/por-especie-perro.jpg" alt="...">
 
-        </dd>
-        <dt>
+      </div>
+      <div class="col-md-3">
+          <dl class="dl-horizontal">
+              <dt>
             @Html.DisplayNameFor(model => model.Nombre)
         </dt>
         <dd>
@@ -45,9 +48,14 @@
              @Html.DisplayFor(model => model.Mensaje)
         </dd>
 
-    </dl>
+          </dl>
+      </div>
+
+    </div>
+
 </div>
 
+   
 
 <div>
    
