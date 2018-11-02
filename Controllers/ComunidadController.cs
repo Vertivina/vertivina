@@ -13,8 +13,6 @@ namespace vertivina.Controllers
         }
         public IActionResult Index()
         {
-            //var productos = from m in _context.Productos2 select m;
-            //return View(productos);
             return View();
         }
 

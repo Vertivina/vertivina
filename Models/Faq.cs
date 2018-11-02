@@ -15,19 +15,19 @@ namespace vertivina.Models
         public string email { get; set; }
         [MinLength(10)]
         public string msj { get; set; }
-
+        [Required]
         public string nombrePersonal {get;set;}
-
+        [Required]
         public DateTime fechaInc { get;set;}
-
+        [Required]
         public string respuesta{get;set;}
-
+        [Required]
         public string solicito{get;set;}
-
+        [Required]
         public string motivos{get;set;}
-
+        [Required]
         public int tlf {get;set;}
-
+        [Required]
         public string tipo { get;set;}
     
     }
