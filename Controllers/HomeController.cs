@@ -57,9 +57,7 @@ namespace vertivina.Controllers
             return View();
         }
 
-        public IActionResult Cita(){
-            return View();
-        }
+       
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Cita([Bind("Nombre,Mascota,Telefono,TipoTelefono,Doctor,Fecha,Hora,TipoMascota,TipoCita,Direccion")] Cita cita)
@@ -85,7 +83,7 @@ namespace vertivina.Controllers
             if (ModelState.IsValid)
             {
                 _context.Add(adopcion);
-                _context.SaveChangues();
+                _context.SaveChanges();
                 return RedirectToAction("Index");
             }
             return View(adopcion);
@@ -106,14 +104,7 @@ namespace vertivina.Controllers
             //return View(faq);
             return View();
         }
-        public IActionResult Faq(Faq faq){
-            if (ModelState.IsValid){
-                _context.Add(faq);
-                _context.SaveChangues();
-                return RedirectToAction("Confirmar");
-            }
-            return View(faq);
-        }
+       
         
         [HttpPost]
         [ValidateAntiForgeryToken]
