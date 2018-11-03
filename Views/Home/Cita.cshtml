@@ -96,12 +96,14 @@ $(document).ready(function(){
                 <select  class="form-control" asp-for="Doctor">
                     <option value="Morgan">Morgan</option>
                     <option value="Darling">Darling</option>
+                    <option value="Darling">Darrow</option>
                 </select>
                 
             </div>
             <div class="form-group">
                 <label for="">Horario:</label>
                  <select  class="form-control" asp-for="Hora">
+                     <option value="14:45">10:15</option>
                     <option value="12:30">12:30</option>
                     <option value="14:45">14:45</option>
                 </select>
@@ -113,12 +115,13 @@ $(document).ready(function(){
             </div>
                         
             <div class="form-group">
-                <label for="">Tipo de cita:</label>
+                <label for="">Tipo de Servicio:</label>
                  <select  class="form-control" asp-for="TipoCita">
                     <option value="Cirugias" id="tc1">Cirugias</option>
                     <option value="Chequeo" id="tc2">Chequeo</option>
                     <option value="Revision" id="tc3">Revision</option>
                     <option value="PromPerros" id="tc4">Promoción perros</option>
+                     <option value="Parejas" id="tc4">Busqueda de Pareja</option>
                 </select>
                 
             </div>
