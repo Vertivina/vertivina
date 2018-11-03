@@ -60,7 +60,7 @@ namespace vertivina.Controllers
             {
                 _context.Add(contacto);
                 await _context.SaveChangesAsync();
-                return RedirectToAction("Index","Home");
+                return RedirectToAction("Confirmar","Home");
             }
             return View(contacto);
         }

@@ -133,7 +133,7 @@ namespace Models.MvcContext
                 );
                 }*/
 
-        public DbSet<Producto> Productos { get; set; }
+    
 
         public DbSet<Cita> Cita { get; set; }
 

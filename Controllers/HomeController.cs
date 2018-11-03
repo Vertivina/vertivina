@@ -8,6 +8,7 @@ using vertivina.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Models.MvcContext;
+using System.Threading;
 
 namespace vertivina.Controllers
 {
@@ -72,33 +73,28 @@ namespace vertivina.Controllers
            return View(cita);
         }
         public IActionResult Confirmar(){
+            
+            
             return View();
+            
+              
         }
         public IActionResult Adopcion()
         {
             return View();
         }
-        public IActionResult Adopcion(Adopcion adopcion)
-        {
-            if (ModelState.IsValid)
-            {
-                _context.Add(adopcion);
-                _context.SaveChanges();
-                return RedirectToAction("Index");
-            }
-            return View(adopcion);
-        }
+      
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("NombreDueño,Mascota,Telefono,TipoTelefono,NombreMascota,FechaAdop,TipoMascota,TipoMascota,Ocupacion,Direccion,Motivo1,Motivo2,Motivo3")] Adopcion adopcion)
+        public async Task<IActionResult> Adopcion([Bind("NombreDueño,Mascota,Telefono,TipoTelefono,NombreMascota,FechaAdop,TipoMascota,TipoMascota,Ocupacion,Direccion,Motivo1,Motivo2,Motivo3")] Adopcion adopcion)
         {
             if (ModelState.IsValid)
             {
                 _context.Add(adopcion);
                 await _context.SaveChangesAsync();
-                return RedirectToAction("Index", "Home");
+                return RedirectToAction("Confirmar");
             }
-            return View();
+            return View(adopcion);
         }
         public IActionResult Faq(){
             //return View(faq);
@@ -114,7 +110,7 @@ namespace vertivina.Controllers
             {
                 _context.Add(faq);
                 await _context.SaveChangesAsync();
-                return RedirectToAction("Index");
+                return RedirectToAction("Confirmar");
             }
 
             return View(faq);
