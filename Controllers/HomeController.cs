@@ -77,6 +77,7 @@ namespace vertivina.Controllers
             return View();
         } 
         public IActionResult Faq(){
+            //return View(faq);
             return View();
         }
         public IActionResult Faq(Faq faq){
