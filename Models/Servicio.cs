@@ -1,3 +1,5 @@
+using System.Collections.Generic;
+
 namespace vertivina.Models
 {
     public class Servicio
@@ -13,6 +15,7 @@ namespace vertivina.Models
         public string Email { get; set; }
 
         public string Mensaje { get; set; }
+        public List<Mascota> Mascota {get; set;}
             
         
     }

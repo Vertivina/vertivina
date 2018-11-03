@@ -16,6 +16,46 @@ namespace Models.MvcContext
         }
 
         #region CodigoAaron;
+        private List<Producto2> datos= new List<Producto2>();
+
+
+        public MvcContext(){
+                datos.Add(new Producto2{
+                    Codigo = 1,
+                    Nombre = "Producto 1",
+                        Cantidad = 15,
+                        Desc = "Articulo para tu cachorro",
+                        Tipo = "Correa",
+                        Precio = 150.00
+                });
+                datos.Add(new Producto2{
+                   Codigo = 2,
+                        Nombre = "Producto 2",
+                        Cantidad = 15,
+                        Desc = "Articulo para tu cachorro",
+                        Tipo = "Correa",
+                        Precio = 150.00
+                });
+
+                 datos.Add(new Producto2{
+                         Codigo = 3,
+                        Nombre = "Producto 3",
+                        Cantidad = 15,
+                        Desc = "Articulo para tu cachorro",
+                        Tipo = "Correa",
+                        Precio = 150.00
+                });
+
+
+
+        }
+
+         public List<Producto2> Listar() {
+            return datos;
+        }
+            
+
+
         /*protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
 

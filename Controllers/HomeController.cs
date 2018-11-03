@@ -57,7 +57,9 @@ namespace vertivina.Controllers
             return View();
         }
 
-
+        public IActionResult Cita(){
+            return View();
+        }
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Cita([Bind("Nombre,Mascota,Telefono,TipoTelefono,Doctor,Fecha,Hora,TipoMascota,TipoCita,Direccion")] Cita cita)
@@ -66,12 +68,51 @@ namespace vertivina.Controllers
             {
                 _context.Add(cita);
                 await _context.SaveChangesAsync();
-                return RedirectToAction("Index");
+                //return RedirectToAction("Index");
+                return RedirectToAction("Confirmar");
             }
            return View(cita);
         }
-        public IActionResult Faq(){
+        public IActionResult Confirmar(){
             return View();
+        }
+        public IActionResult Adopcion()
+        {
+            return View();
+        }
+        public IActionResult Adopcion(Adopcion adopcion)
+        {
+            if (ModelState.IsValid)
+            {
+                _context.Add(adopcion);
+                _context.SaveChangues();
+                return RedirectToAction("Index");
+            }
+            return View(adopcion);
+        }
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Create([Bind("NombreDueño,Mascota,Telefono,TipoTelefono,NombreMascota,FechaAdop,TipoMascota,TipoMascota,Ocupacion,Direccion,Motivo1,Motivo2,Motivo3")] Adopcion adopcion)
+        {
+            if (ModelState.IsValid)
+            {
+                _context.Add(adopcion);
+                await _context.SaveChangesAsync();
+                return RedirectToAction("Index", "Home");
+            }
+            return View();
+        }
+        public IActionResult Faq(){
+            //return View(faq);
+            return View();
+        }
+        public IActionResult Faq(Faq faq){
+            if (ModelState.IsValid){
+                _context.Add(faq);
+                _context.SaveChangues();
+                return RedirectToAction("Confirmar");
+            }
+            return View(faq);
         }
         
         [HttpPost]
@@ -88,14 +129,14 @@ namespace vertivina.Controllers
             return View(faq);
         }
 
-          public IActionResult Adopcion()
+       /*    public IActionResult Adopcion()
         {
             //ViewData["Message"] = "Preguntas frecuentes";
             
             
             return View();
 
-        }
+        } */
 
 
         public IActionResult Error()
