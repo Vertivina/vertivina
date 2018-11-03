@@ -70,6 +70,9 @@ namespace vertivina.Controllers
             }
            return View(cita);
         }
+        public IActionResult Confirmar(){
+            return View();
+        } 
         public IActionResult Faq(){
             return View();
         }
