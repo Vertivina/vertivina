@@ -79,6 +79,14 @@ namespace vertivina.Controllers
         public IActionResult Faq(){
             return View();
         }
+        public IActionResult Faq(Faq faq){
+            if (ModelState.IsValid){
+                _context.Add(faq);
+                _context.SaveChangues();
+                return RedirectToAction("Confirmar");
+            }
+            return View(faq);
+        }
         
         [HttpPost]
         [ValidateAntiForgeryToken]
