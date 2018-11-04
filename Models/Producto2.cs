@@ -5,8 +5,8 @@ namespace vertivina.Models
 {
     public class Producto2
     {
-        [Key]
-        public int Codigo { get; set; }
+        
+        public int ID { get; set; }
         public string Nombre { get; set; }
         public int Cantidad { get; set; }
         public string Desc { get; set; }

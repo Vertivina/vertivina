@@ -17,8 +17,6 @@ namespace vertivina.Models
             tipoMascota=tipM;
         }
         
-        public Mascota(){
-            
-        }
+       
     }
 }

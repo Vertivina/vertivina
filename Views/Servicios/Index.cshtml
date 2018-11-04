@@ -2,6 +2,8 @@
 
 @{
     ViewData["Title"] = "Index";
+
+
 }
 
 <style>
@@ -73,7 +75,7 @@
 
 	<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
 			<div class="prise-box">
-			<img src="~/images/por-especie-perro.jpg" alt="imagen" class="img-responsive">
+			<img src="@Url.Content(item.Imagen)" alt="imagen" class="img-responsive">
 			<div class="info-this">
 				<div class="left-box">
 				<h2> @Html.DisplayFor(modelItem => item.Nombre)
