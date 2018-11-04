@@ -13,6 +13,7 @@ Recordatorio: No borren las migraciones a menos que sea una verdadera emergencia
  <br/>
 *Para autogenerar codigo: <br/>
  <br/>
+ *tengo problemas en cita, y promociones, lo mas raro esque en mis tablas se crea, producto y cita, pero no puedo visualizarlas.<br/>
 
   dotnet aspnet-codegenerator controller -name [Nombre de nuevo controlador] -m [Clase] -dc [Clase contexto] --relativeFolderPath     Controllers --useDefaultLayout --referenceScriptLibraries 
  <br/>
