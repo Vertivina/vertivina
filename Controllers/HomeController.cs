@@ -45,12 +45,12 @@ namespace vertivina.Controllers
 
             return View();
         }
-         /*public IActionResult Cita()
+         public IActionResult Cita()
         {
             ViewData["Message"] = "Registra aqui tu cita";
 
             return View();
-        }*/
+        }
         public IActionResult Comunidad()
         {
             ViewData["Message"] = "Your contact page.";
@@ -116,14 +116,7 @@ namespace vertivina.Controllers
             return View(faq);
         }
 
-       /*    public IActionResult Adopcion()
-        {
-            //ViewData["Message"] = "Preguntas frecuentes";
-            
-            
-            return View();
-
-        } */
+      
 
 
         public IActionResult Error()
