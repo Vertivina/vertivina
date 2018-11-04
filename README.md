@@ -7,7 +7,7 @@ Glosario:<br/>
 *Para las migraciones (cada vez que se tiene que hacer cambios tanto a las clases como a la base): <br/>
  <br/>
   dotnet ef migrations add [Nombre de migración. Debe ser diferente a la anterior] <br/>
-  dotnet ef database update<br/>
+Gente tengo problemas con el ultimo commit, no puedo habrir la vista cita, ni promociones, quien demonios, cambio algo <br/>
 <br/>
 Recordatorio: No borren las migraciones a menos que sea una verdadera emergencia o se quiera hacer desde cero
  <br/>
