@@ -20,9 +20,9 @@ namespace Models.MvcContext
 
 
 
-         public List<Producto2> Listar() {
-            return datos;
-        }
+         //public List<Producto2> Listar() {
+           // return datos;
+        //}
             
 
 

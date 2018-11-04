@@ -1,12 +1,16 @@
 using System;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace vertivina.Models
 {
     public class Producto2
     {
-        
+        //[Key]
+        //[Column(Order=0)]
         public int ID { get; set; }
+        //[Key]
+        //[Column(Order=0)]
         public string Nombre { get; set; }
         public int Cantidad { get; set; }
         public string Desc { get; set; }
