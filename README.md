@@ -10,6 +10,12 @@ Este comando lo saque de una pagina de "codigos" nos permite crear las figuritas
 
 Grupo cuentenme, nuestra pagina tb tiene que tener el famoso responsive ? 
 quiero que todos me manden sus respuestas, muchas gracias. buenas noches.
+<br/>
+La pagina puede ser responsive, si
+Por cierto, la pagina de login esta inestable. Cada vez que intento ingresar me aparecen errores de sintaxis que no logro comprender del todo
+<br/>
+Y al quitar 
+<br/>
 Glosario:<br/>
 
 *Para las migraciones (cada vez que se tiene que hacer cambios tanto a las clases como a la base): <br/>
