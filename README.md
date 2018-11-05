@@ -12,9 +12,13 @@ Grupo cuentenme, nuestra pagina tb tiene que tener el famoso responsive ?
 quiero que todos me manden sus respuestas, muchas gracias. buenas noches.
 <br/>
 La pagina puede ser responsive, si
-Por cierto, la pagina de login esta inestable. Cada vez que intento ingresar me aparecen errores de sintaxis que no logro comprender del todo
+Por cierto, la pagina de login esta inestable. Cada vez que intento ingresar me aparecen errores de sintaxis que no logro comprender del todo, como "error CS1003: Syntax error, ',' expected" en lugar donde no deberia haber una coma
 <br/>
-Y al quitar 
+Y al quitar el style se resuelve el problema.
+<br/>
+Si alguno puede ver el problema, estaré agradecido
+<br/>
+Buenas noches
 <br/>
 Glosario:<br/>
 
