@@ -32,6 +32,12 @@ namespace vertivina.Controllers
 
             return View();
         }
+        public IActionResult Login()
+        {
+            ViewData["Message"] = "Your contact page.";
+
+            return View();
+        }
 
         public IActionResult Contact()
         {
