@@ -16,6 +16,8 @@ namespace vertivina.Models
         public string Desc { get; set; }
         public string Tipo { get; set; }
         public double Precio { get; set; }
+
+        public string Imagen { get; set; }
         public DateTime? Fecven { get; set; }
     }
 }
