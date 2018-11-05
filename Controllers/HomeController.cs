@@ -58,6 +58,14 @@ namespace vertivina.Controllers
             return View();
         }
 
+        public IActionResult ListaCita()
+        {
+           
+
+            return View();
+        }
+
+
         public IActionResult Faq()
         {
             ViewData["Message"] = "Tienes dudas?";
