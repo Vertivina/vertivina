@@ -2,9 +2,14 @@
 Un simple repositorio de prueba.<br/>
 Si es posible, nos lo quedamos<br/>
 
+# vertivina 
+Procedere a poner la pagina de login en responsive !! =) <br/>
+
 &#128272
 Este comando lo saque de una pagina de "codigos" nos permite crear las figuritas de la llave y el candado, que aparecen en nuestros input de texto y contraseña respectivamente ... pensare si crear una pagina de css difente o colocar los estilos en la misma pestaña login.<br/>
 
+Grupo cuentenme, nuestra pagina tb tiene que tener el famoso responsive ? 
+quiero que todos me manden sus respuestas, muchas gracias. buenas noches.
 Glosario:<br/>
 
 *Para las migraciones (cada vez que se tiene que hacer cambios tanto a las clases como a la base): <br/>
