@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using MySql.Data.EntityFrameworkCore.Extensions;
 using vertivina.Models;
 
 namespace Models.MvcContext
