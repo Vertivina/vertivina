@@ -2,17 +2,36 @@
 Un simple repositorio de prueba.<br/>
 Si es posible, nos lo quedamos<br/>
 
+# vertivina 
+Procedere a poner la pagina de login en responsive !! =) <br/>
+
+&#128272
+Este comando lo saque de una pagina de "codigos" nos permite crear las figuritas de la llave y el candado, que aparecen en nuestros input de texto y contraseña respectivamente ... pensare si crear una pagina de css difente o colocar los estilos en la misma pestaña login.<br/>
+
+Grupo cuentenme, nuestra pagina tb tiene que tener el famoso responsive ? 
+quiero que todos me manden sus respuestas, muchas gracias. buenas noches.
+<br/>
+La pagina puede ser responsive, si
+Por cierto, la pagina de login esta inestable. Cada vez que intento ingresar me aparecen errores de sintaxis que no logro comprender del todo, como "error CS1003: Syntax error, ',' expected" en lugar donde no deberia haber una coma
+<br/>
+Y al quitar el style se resuelve el problema.
+<br/>
+Si alguno puede ver el problema, estaré agradecido
+<br/>
+Buenas noches
+<br/>
 Glosario:<br/>
 
 *Para las migraciones (cada vez que se tiene que hacer cambios tanto a las clases como a la base): <br/>
  <br/>
   dotnet ef migrations add [Nombre de migración. Debe ser diferente a la anterior] <br/>
-  dotnet ef database update<br/>
+Gente tengo problemas con el ultimo commit, no puedo habrir la vista cita, ni promociones, quien demonios, cambio algo <br/>
 <br/>
 Recordatorio: No borren las migraciones a menos que sea una verdadera emergencia o se quiera hacer desde cero
  <br/>
 *Para autogenerar codigo: <br/>
  <br/>
+ *tengo problemas en cita, y promociones, lo mas raro esque en mis tablas se crea, producto y cita, pero no puedo visualizarlas.<br/>
 
   dotnet aspnet-codegenerator controller -name [Nombre de nuevo controlador] -m [Clase] -dc [Clase contexto] --relativeFolderPath     Controllers --useDefaultLayout --referenceScriptLibraries 
  <br/>

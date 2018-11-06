@@ -31,10 +31,6 @@ namespace Models.MvcContext
 
         base.OnModelCreating(modelBuilder);
         
-
-            modelBuilder.Entity<ProductoCategoria>().HasKey(t => new { t.ProductoId, t.CategoriaId });
-            modelBuilder.Entity<ProductoCategoria>().HasOne(pc => pc.Producto).WithMany(p => p.ProductosCategorias).OnDelete(DeleteBehavior.Restrict);
-            modelBuilder.Entity<ProductoCategoria>().HasOne(pc => pc.Categoria).WithMany(p => p.ProductosCategorias).OnDelete(DeleteBehavior.Restrict);
             modelBuilder.Entity<Producto2>().HasData(
                     new Producto2
                     {

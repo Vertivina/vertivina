@@ -1,0 +1,78 @@
+@model IEnumerable<vertivina.Models.Cita>
+
+
+
+@{
+    ViewData["Title"] = "Lista de Citas registradas";
+
+
+}
+
+<style>
+    .prise-box{width:100%;float:left;border-radius:10px;-webkit-border-radius:10px;-moz-border-radius:10px;box-shadow: rgba(158,158,158,.61) 0 2px 5px 0;margin-bottom:10px;}
+.prise-box img{width:100%;border-radius:10px 10px 0 0;-webkit-border-radius:10px 10px 0 0;-moz-border-radius:10px 10px 0 0;}
+.info-this{    float: left;   width: 100%;   background:#ececec;    padding: 15px;}
+.left-box{width: 70%;float:left;}
+.left-box a{
+    background-color: #8d0104;
+    color: #ffffff;
+    padding: 4px 12px;
+    font-size: 13px;
+    margin-top: 6px;
+    display: inline-block;
+    }
+.left-box h2{
+    font-weight: normal;
+    margin:0px;
+    padding:0px;
+    color: #000;
+    text-align: left;
+    font-style:italic;
+    font-size: 29px;
+    margin: 0;
+    margin-bottom: 0;
+    margin-top: -10px;
+    }
+.right-box-up{width: 30%;float:right;}
+.blue-box span{    font-size: 12px;
+    margin: 4px 5px;
+    color: #fffb5f;}
+.blue-box h2{margin: 2px 1px;
+    font-size: 26px;
+    color: #ffffff;
+    font-weight: normal;}
+.blue-box{box-shadow: 1px 1px 4px #797979;
+    background-color: #031f5d;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 15px 4px;
+    text-align: center;
+  
+    width: 80px;
+    float: right;
+    margin-top: -29px;
+    z-index: 999999;
+    position: relative;}
+
+</style>
+<h2>@ViewData["Title"] </h2>
+
+<div class="container"> 
+    <div class="row" style="background-color:whitesmoke; padding:15px;box-shadow: 0 0 20px blue;"> 
+        <div class="col-md-12"> 
+            <form asp-action="ListaCita">
+              <input type="text" name="SearchString" placeholder="Buscar Cita">
+              <input type="submit" value="Buscar" />  
+            </form>
+
+
+        </div>
+
+    </div>
+
+</div>    
+
+
+
+
+

@@ -32,6 +32,12 @@ namespace vertivina.Controllers
 
             return View();
         }
+        public IActionResult Login()
+        {
+            ViewData["Message"] = "Your contact page.";
+
+            return View();
+        }
 
         public IActionResult Contact()
         {
@@ -45,12 +51,28 @@ namespace vertivina.Controllers
 
             return View();
         }
-         /*public IActionResult Cita()
+         public IActionResult Cita()
         {
             ViewData["Message"] = "Registra aqui tu cita";
 
             return View();
-        }*/
+        }
+
+        public IActionResult ListaCita()
+        {
+           
+
+            return View();
+        }
+
+
+        public IActionResult Faq()
+        {
+            ViewData["Message"] = "Tienes dudas?";
+
+            return View();
+        }
+
         public IActionResult Comunidad()
         {
             ViewData["Message"] = "Your contact page.";
@@ -72,12 +94,26 @@ namespace vertivina.Controllers
             }
            return View(cita);
         }
-        public IActionResult Confirmar(){
-            
-            
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Faq([Bind("contactoNombre,tlf,email,msj,nombrePersonal,respuesta,motivos,solicito,fechaInc")] Faq faq)
+        {
+            if (ModelState.IsValid)
+            {
+                _context.Add(faq);
+                await _context.SaveChangesAsync();
+                
+                return RedirectToAction("ConfirmarFaq","Home");
+            }
+            return View(faq);
+        }
+        public IActionResult ConfirmarFaq()
+        {
             return View();
-            
-              
+        }
+        public IActionResult Confirmar()
+        {
+            return View();    
         }
         public IActionResult Adopcion()
         {
@@ -96,36 +132,7 @@ namespace vertivina.Controllers
             }
             return View(adopcion);
         }
-        public IActionResult Faq(){
-            //return View(faq);
-            return View();
-        }
-       
-        
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Faq([Bind("contactoNombre,email,msj")] Faq faq)
-        {
-            if (ModelState.IsValid)
-            {
-                _context.Add(faq);
-                await _context.SaveChangesAsync();
-                return RedirectToAction("Confirmar");
-            }
-
-            return View(faq);
-        }
-
-       /*    public IActionResult Adopcion()
-        {
-            //ViewData["Message"] = "Preguntas frecuentes";
-            
-            
-            return View();
-
-        } */
-
-
+      
         public IActionResult Error()
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });

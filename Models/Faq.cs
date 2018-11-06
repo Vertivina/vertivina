@@ -8,28 +8,38 @@ namespace vertivina.Models
     public class Faq
     {
         public int ID { get; set; }
+
         [Required]
         public string contactoNombre { get; set; }
+
+
+        [Required]
+        public int tlf { get; set; }
+
         [Required]
         [EmailAddress]
         public string email { get; set; }
+
         [MinLength(10)]
         public string msj { get; set; }
+
         [Required]
         public string nombrePersonal {get;set;}
+
         [Required]
-        public DateTime fechaInc { get;set;}
+        public string respuesta { get; set; }
+
         [Required]
-        public string respuesta{get;set;}
+        public string motivos { get; set; }
+
         [Required]
-        public string solicito{get;set;}
+        public string solicito { get; set; }
+
+
         [Required]
-        public string motivos{get;set;}
-        [Required]
-        public int tlf {get;set;}
-        [Required]
-        public string tipo { get;set;}
-    
+        [DisplayFormat(DataFormatString = "{0:dd-mm-yyyy}", ApplyFormatInEditMode = true)]
+        public DateTime fechaInc { get; set; }
+        
     }
     
 }
