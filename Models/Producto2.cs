@@ -8,7 +8,7 @@ namespace vertivina.Models
     {
         //[Key]
         //[Column(Order=0)]
-        public int ID { get; set; }
+        public int Id { get; set; }
         //[Key]
         //[Column(Order=0)]
         public string Nombre { get; set; }
