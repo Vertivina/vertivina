@@ -72,7 +72,7 @@
         <table class="table">
             <thead>
 
-                <tr>
+             <tr>
                 <th>
                     Nombre del Dueño
                 </th>
@@ -88,14 +88,12 @@
                 <th>
                     Tipo de telefono
                 </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.Telefono)
-                </th>
+                
                 <th>
                     @Html.DisplayNameFor(model => model.Doctor)
                 </th>
                  <th>
-                    @Html.DisplayNameFor(model => model.Doctor)
+                    @Html.DisplayNameFor(model => model.TipoCita)
                 </th>
                  <th>
                     @Html.DisplayNameFor(model => model.Fecha)
@@ -110,9 +108,43 @@
             </thead>
             <tbody>    
         @foreach (var item in Model) {
+            <tr>  
 
-
-
+                <th>
+                   @Html.DisplayFor(modelItem => item.Nombre)
+                </th>
+                 <th>
+                   @Html.DisplayFor(modelItem => item.Mascota)
+                </th>
+                 <th>
+                    @Html.DisplayFor(modelItem => item.TipoMascota)
+                </th>
+                <th>
+                    @Html.DisplayFor(modelItem => item.Telefono)
+                </th>
+                <th>
+                    @Html.DisplayFor(modelItem => item.TipoTelefono)
+                </th>
+                <th>
+                    @Html.DisplayFor(modelItem => item.Doctor)
+                </th>
+                <th>
+                    @Html.DisplayFor(modelItem => item.TipoCita)
+                </th>
+                <th>
+                    @Html.DisplayFor(modelItem => item.Fecha)
+                </th>
+                <th>
+                     @Html.DisplayFor(modelItem => item.Hora)
+                </th>
+                <th>
+                    
+                </th>
+                <th>
+                    
+                </th>
+                
+             </tr>
         }
 
         </div>
