@@ -71,11 +71,16 @@ namespace vertivina.Controllers
             return View();
         }
 
-        public IActionResult ListaCita()
+        public async Task<IActionResult> ListaCita(string searchString)
         {
-           
+             var citas = from m in _context.Cita
+             select m;
+               if (!String.IsNullOrEmpty(searchString))
+            {
+                citas = citas.Where(s => s.Nombre.Contains(searchString));
+            }
 
-            return View();
+            return View(await citas.ToListAsync());
         }
 
 
