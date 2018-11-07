@@ -141,7 +141,12 @@
                     
                 </th>
                 <th>
-                    
+                    @if(item.Direccion!=null){
+                        @Html.DisplayFor(modelItem => item.Direccion)
+                    }else{
+                         @Html.Display("En el local")
+                    }
+
                 </th>
                 
              </tr>
