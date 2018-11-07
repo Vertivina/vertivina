@@ -56,6 +56,9 @@
 
 </style>
 <h2>@ViewData["Title"] </h2>
+<form asp-action="Cita">           
+    <input type="submit" value="Regresar" />  
+    </form>
 
 <div class="container"> 
     <div class="row" style="background-color:whitesmoke; padding:15px;box-shadow: 0 0 20px green;"> 
@@ -64,10 +67,52 @@
               <input type="text" name="SearchString" placeholder="Buscar Cita">
               <input type="submit" value="Buscar" />  
             </form>
+
+
+        <table class="table">
+            <thead>
+
+                <tr>
+                <th>
+                    Nombre del Dueño
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Mascota)
+                </th>
+                 <th>
+                    Tipo de Mascota
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Telefono)
+                </th>
+                <th>
+                    Tipo de telefono
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Telefono)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Doctor)
+                </th>
+                 <th>
+                    @Html.DisplayNameFor(model => model.Doctor)
+                </th>
+                 <th>
+                    @Html.DisplayNameFor(model => model.Fecha)
+                </th>
+                 <th>
+                    @Html.DisplayNameFor(model => model.Hora)
+                </th>
+                 <th>
+                    Direccion (De no haber es en el local)
+                </th>
+             </tr>
+            </thead>
+            <tbody>    
         @foreach (var item in Model) {
 
 
-            
+
         }
 
         </div>
