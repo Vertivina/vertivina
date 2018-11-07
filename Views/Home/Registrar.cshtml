@@ -18,14 +18,15 @@
 	               	</div>
 	            </div> 
 				<div class="main-login main-center">
-					<form class="form-horizontal" method="post" action="#">
+					<form class="form-horizontal" method="post" asp-action="Registrar">
 						
 						<div class="form-group">
 							<label for="name" class="cols-sm-2 control-label">Nombres y Apellidos</label>
 							<div class="cols-sm-10">
 								<div class="input-group">
 									<span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
-									<input type="text" class="form-control" name="name" id="name"  placeholder="Ingresa nombres completos"/>
+									<input type="text" class="form-control" asp-for="names"   placeholder="Ingresa nombres completos"/>
+									<span asp-validation-for="contactoNombre" class="text-danger"></span>
 								</div>
 							</div>
 						</div>
@@ -35,7 +36,8 @@
 							<div class="cols-sm-10">
 								<div class="input-group">
 									<span class="input-group-addon"><i class="fa fa-envelope fa" aria-hidden="true"></i></span>
-									<input type="text" class="form-control" name="email" id="email"  placeholder="Ingresa tu Email"/>
+									<input asp-for="email" type="text" class="form-control"   placeholder="Ingresa tu Email"/>
+									<span asp-validation-for="email" class="text-danger"></span>
 								</div>
 							</div>
 						</div>
@@ -45,7 +47,8 @@
 							<div class="cols-sm-10">
 								<div class="input-group">
 									<span class="input-group-addon"><i class="fa fa-users fa" aria-hidden="true"></i></span>
-									<input type="text" class="form-control" name="username" id="username"  placeholder="Ingresa tu nombre de usuario"/>
+									<input asp-for="user" type="text" class="form-control"   placeholder="Ingresa tu nombre de usuario"/>
+									<span asp-validation-for="user" class="text-danger"></span>
 								</div>
 							</div>
 						</div>
@@ -55,7 +58,8 @@
 							<div class="cols-sm-10">
 								<div class="input-group">
 									<span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
-									<input type="password" class="form-control" name="password" id="password"  placeholder="Ingresa tu Password"/>
+									<input asp-for="pass" type="password" class="form-control"   placeholder="Ingresa tu Password"/>
+									<span asp-validation-for="pass" class="text-danger"></span>
 								</div>
 							</div>
 						</div>
@@ -65,13 +69,14 @@
 							<div class="cols-sm-10">
 								<div class="input-group">
 									<span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
-									<input type="password" class="form-control" name="confirm" id="confirm"  placeholder="Confirmar tu Password"/>
+									<input asp-for="pass2" type="password" class="form-control"   placeholder="Confirmar tu Password"/>
+									<span asp-validation-for="pass2" class="text-danger"></span>
 								</div>
 							</div>
 						</div>
 
 						<div class="form-group ">
-							<button type="button" class="btn btn-primary btn-lg btn-block login-button">Registrar</button>
+							<button type="submit" class="btn btn-primary btn-lg btn-block login-button">Registrar</button>
 						</div>
                         <center>
 						<div class="login-register">

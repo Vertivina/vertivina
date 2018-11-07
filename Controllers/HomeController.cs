@@ -120,6 +120,22 @@ namespace vertivina.Controllers
             }
             return View(faq);
         }
+
+        public async Task<IActionResult> Registrar([Bind("names,email,user,pass,pass2")] Registrar registrar)
+        {
+            if (ModelState.IsValid)
+            {
+                _context.Add(registrar);
+                await _context.SaveChangesAsync();
+
+                return RedirectToAction("ConfirmarRegistrar", "Home");
+            }
+            return View(registrar);
+        }
+        public IActionResult ConfirmarRegistrar()
+        {
+            return View();
+        }
         public IActionResult ConfirmarFaq()
         {
             return View();
