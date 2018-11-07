@@ -135,7 +135,7 @@ namespace vertivina.Controllers
 
                 return RedirectToAction("ConfirmarRegistrar", "Home");
             }
-            return View(registrar); /*  s */
+            return View(registrar); /*  ss */
         }
         public IActionResult ConfirmarRegistrar()
         {

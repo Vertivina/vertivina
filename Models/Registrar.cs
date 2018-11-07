@@ -7,7 +7,7 @@ namespace vertivina.Models
 {
     public class Registrar
     {
-       /*  s */
+       /*  ss */
         public int ID { get; set; }
 
         [Required]
