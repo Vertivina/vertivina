@@ -8,6 +8,8 @@ Procedere a reponer la pagina de citas, para que nuestras imagenes salgan mejor 
 Envio los nuevos estilos para mejorar las imagenes en cita 
 
 Para terminar, tratare de realizar un js para el movimiento, denme sus fuerzas muchachos, para poder realizarlo, y tener exitos <br/>
+
+Procederemos a crear una carpeta en nuestro "ASSETS" llamada slider.js =) 
 # vertivina 
 Procedere a poner la pagina de login en responsive !! =) <br/>
 
