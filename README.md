@@ -5,6 +5,7 @@ Si es posible, nos lo quedamos<br/>
 #vertivina
 Procedere a reponer la pagina de citas, para que nuestras imagenes salgan mejor y con un slader mejor =) <br/>
 
+Envio los nuevos estilos para mejorar las imagenes en cita 
 
 # vertivina 
 Procedere a poner la pagina de login en responsive !! =) <br/>
