@@ -32,18 +32,7 @@ $(document).ready(function(){
 
 
   
-<script type="text/javascript">
-      $(function(){
-        $('#slider div:gt(0)').hide();
-           setInterval(function(){
-               $('#slider div:first-child').fadeOut(1000)
-                 .next('div').fadeIn(1000)
-                 .end().appendTo('#slider');
 
-           },3000);
-       })
-
-</script>
         
   
 
@@ -138,17 +127,16 @@ $(document).ready(function(){
 
             
         <div class="col-md-offset-2 col-md-4">
-                <div class="containerDoc">
-                <div id="slider">
-
-         
-                <div><img style="border-radius:15px;" src="~/images/alvaro.jpg" class="img-responsive"></div>   
-                 <div><img style="border-radius:15px;" src="~/images/cesar.jpg" class="img-responsive"></div>   
-                <div><img style="border-radius:15px;" src="~/images/julio.jpg" class="img-responsive"></div>    
-
-
+            <div id="contenedor-slider" class="contenedor-slider">
+                <div id="slider" class="slider">
+                    <section class="slider__section"><img src="../images/alvaro.jpg" width="400px" height="400px" class="slider__img"></section>
+                    <section class="slider__section"><img src="../images/julio.jpg" width="400px" height="400px" class="slider__img"></section>
+                    <section class="slider__section"><img src="../images/aarom.jpg" width="400px" height="400px"class="slider__img"></section>
+                    <section class="slider__section"><img src="../images/cesar.jpg" width="400px" height="400px"class="slider__img"></section>
                 </div>
-            </div> 
+                  <div id="btn-prev" class="btn-prev">&#60;</div>
+                  <div id="btn-next" class="btn-next">&#62;</div>
+            </div>
         </div>
     </div>
 </div>
