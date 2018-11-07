@@ -1,0 +1,43 @@
+@{
+    ViewData["Title"] = "Reestablecer contraseña";
+}
+<link href="@Url.Content("~/css/reset.css")" rel="stylesheet" type="text/css" />
+ @section Scripts
+{
+  <script src="@Url.Content("~/js/reset.js")"></script>
+}
+<br><br>
+<center>
+<h2>@ViewData["Title"]</h2>
+</center>
+
+<div class="container">
+	<div class="row">
+        <div class="col-md-4"></div>
+		<div class="col-md-4">
+		    
+		    <label>Password actual</label>
+		    <div class="form-group pass_show"> 
+                <input type="password" class="form-control" placeholder="Password actual"> 
+            </div> 
+		       <label>Nueva Password</label>
+            <div class="form-group pass_show"> 
+                <input type="password"  class="form-control" placeholder="Password nueva"> 
+            </div> 
+		       <label>Confirmar Password</label>
+            <div class="form-group pass_show"> 
+                <input type="password"  class="form-control" placeholder="Confirma tu Password"> 
+            </div> 
+            <div class="form-group ">
+				<button type="button" class="btn btn-primary btn-lg btn-block login-button">Reestablecer contraseña</button>
+			</div>
+            <div class="col-md-4"></div>
+            <br><br>
+            <center>
+						<div class="login-register">
+				            <a>@Html.ActionLink("Volver a loguearse", "Login", "Home")</a>
+				         </div>
+             </center>
+		</div>  
+	</div>
+</div>

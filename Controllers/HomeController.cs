@@ -31,6 +31,7 @@ namespace vertivina.Controllers
 
             return View();
         }
+        
 
         public IActionResult About()
         {
@@ -41,6 +42,12 @@ namespace vertivina.Controllers
         public IActionResult Login()
         {
             ViewData["Message"] = "Your contact page.";
+
+            return View();
+        }
+        public IActionResult Resetpass()
+        {
+            ViewData["Message"] = "Your reset page.";
 
             return View();
         }
