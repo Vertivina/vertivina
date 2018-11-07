@@ -109,40 +109,36 @@
             <tbody>    
         @foreach (var item in Model) {
             <tr>  
-
-                <th>
-                   @Html.DisplayFor(modelItem => item.Nombre)
-                </th>
-                 <th>
-                   @Html.DisplayFor(modelItem => item.Mascota)
-                </th>
-                 <th>
-                    @Html.DisplayFor(modelItem => item.TipoMascota)
-                </th>
-                <th>
-                    @Html.DisplayFor(modelItem => item.Telefono)
-                </th>
-                <th>
-                    @Html.DisplayFor(modelItem => item.TipoTelefono)
-                </th>
-                <th>
-                    @Html.DisplayFor(modelItem => item.Doctor)
-                </th>
-                <th>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Nombre)
+                </td>
+                 <td>
+                    @Html.DisplayFor(modelItem => item.Mascota)
+                </td>
+                 <td>
+                     @Html.DisplayFor(modelItem => item.TipoMascota)
+                </td>
+                 <td>
+                    @Html.DisplayFor(modelItem => item.Telefono) 
+                </td>
+                 <td>
+                     @Html.DisplayFor(modelItem => item.TipoTelefono)
+                </td>
+                 <td>
+                     @Html.DisplayFor(modelItem => item.Doctor)
+                </td>
+                 <td>
                     @Html.DisplayFor(modelItem => item.TipoCita)
-                </th>
-                <th>
-                    @Html.DisplayFor(modelItem => item.Fecha)
-                </th>
-                <th>
-                     @Html.DisplayFor(modelItem => item.Hora)
-                </th>
-                <th>
+                </td>
+                 <td>
+                    @Html.DisplayFor(modelItem => item.Fecha) 
+                </td>
+                 <td>
+                   @Html.DisplayFor(modelItem => item.Hora) 
+                </td>
+                <td>
                    
-                </th>
-                <th>
-                    
-                </th>
+                </td>
                 
              </tr>
         }
