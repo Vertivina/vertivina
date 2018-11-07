@@ -2,6 +2,10 @@
 Un simple repositorio de prueba.<br/>
 Si es posible, nos lo quedamos<br/>
 
+#vertivina
+Procedere a reponer la pagina de citas, para que nuestras imagenes salgan mejor y con un slader mejor =) <br/>
+
+
 # vertivina 
 Procedere a poner la pagina de login en responsive !! =) <br/>
 
