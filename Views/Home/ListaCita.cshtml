@@ -137,7 +137,12 @@
                    @Html.DisplayFor(modelItem => item.Hora) 
                 </td>
                 <td>
-                   
+                   @if(item.Direccion==" "){
+                      <p>En el local</p>
+                       
+                   }else{
+                       @Html.DisplayFor(modelItem => item.Direccion);
+                   }
                 </td>
                 
              </tr>
