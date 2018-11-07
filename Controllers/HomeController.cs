@@ -25,6 +25,12 @@ namespace vertivina.Controllers
         {
             return View();
         }
+        public IActionResult Registrar()
+        {
+            ViewData["Message"] = "Your Registrar description page.";
+
+            return View();
+        }
 
         public IActionResult About()
         {
