@@ -156,7 +156,13 @@ namespace vertivina.Controllers
         {
             return View();    
         }
-        public  async Task<IActionResult> Adopcion(String buscar)
+
+        public IActionResult Adopcion()
+        {
+            return View();    
+        }
+        /*Para la conexion con la base de datos
+         public  async Task<IActionResult> Adopcion(String buscar)
         {
              var adopciones = from m in _context.Mascota
                  select m;
@@ -166,7 +172,7 @@ namespace vertivina.Controllers
             }
 
             return View(await adopciones.ToListAsync());
-        }
+        }*/
       
         [HttpPost]
         [ValidateAntiForgeryToken]
