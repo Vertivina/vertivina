@@ -149,9 +149,16 @@ namespace vertivina.Controllers
         {
             return View();    
         }
-        public IActionResult Adopcion()
+        public  async Task<IActionResult> Adopcion(String buscar)
         {
-            return View();
+             var adopciones = from m in _context.Mascota
+                 select m;
+             if (!String.IsNullOrEmpty(buscar))
+            {
+               adopciones  = adopciones .Where(s => s.nombre.Contains(buscar));
+            }
+
+            return View(await adopciones.ToListAsync());
         }
       
         [HttpPost]
