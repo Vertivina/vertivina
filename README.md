@@ -13,6 +13,10 @@ Procederemos a crear una carpeta en nuestro "ASSETS" llamada slider.js =)
 
 Procedere a mejorar el estilo de nuestra vista ... nosotros (Contact) 
 
+Me gustaria que me escriban, por el git hub, diciendome si les gusta el video, o lo cambiamos algo mas relacionado al tema
+PD: a mi me gusto
+
+
 # vertivina 
 Procedere a poner la pagina de login en responsive !! =) <br/>
 
