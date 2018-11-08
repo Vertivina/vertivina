@@ -12,9 +12,12 @@ namespace vertivina.Models
         [Required]
         public string tipoMascota {get; set;}
 
-        public Mascota(String nombre, String tipoMascota){
+        public string imagen { get; set; }
+
+        public Mascota(String nombre, String tipoMascota,String imagen){
             this.nombre = nombre;
             this.tipoMascota = tipoMascota;
+            this.imagen=imagen;
         }
         
        
