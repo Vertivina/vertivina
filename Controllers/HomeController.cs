@@ -27,7 +27,7 @@ namespace vertivina.Controllers
         }
         public IActionResult Registrar()
         {
-            ViewData["Message"] = "Your Registrar description page.";
+            ViewData["Message"] = "Registre aqui";
 
             return View();
         }
@@ -125,7 +125,8 @@ namespace vertivina.Controllers
             }
             return View(faq);
         }
-
+        [HttpPost]
+        [ValidateAntiForgeryToken]
         public async Task<IActionResult> Registrar([Bind("names,email,user,pass,pass2")] Registrar registrar)
         {
             if (ModelState.IsValid)

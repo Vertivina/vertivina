@@ -1,6 +1,4 @@
-@{
-    ViewData["Title"] = "Registrate";
-}
+@model vertivina.Models.Registrar
 
 
 <center>
@@ -25,8 +23,8 @@
 							<div class="cols-sm-10">
 								<div class="input-group">
 									<span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
-									<input type="text" class="form-control" asp-for="names"   placeholder="Ingresa nombres completos"/>
-									<span asp-validation-for="contactoNombre" class="text-danger"></span>
+									<input type="text" class="form-control" asp-for="names" placeholder="Ingresa nombres completos"/>
+									<span asp-validation-for="names" class="text-danger"></span>
 								</div>
 							</div>
 						</div>
@@ -80,7 +78,7 @@
 						</div>
                         <center>
 						<div class="login-register">
-				            <a>@Html.ActionLink("Volver a loguearse", "Login", "Home")</a>  s
+				            <a>@Html.ActionLink("Volver a loguearse", "Login", "Home") </a> 
 				         </div>
                          </center>
 					</form>
