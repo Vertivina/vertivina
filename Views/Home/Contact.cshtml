@@ -1,12 +1,27 @@
 ﻿<center>
 <h2>@ViewData["Title"]</h2>
 </center>
+<style>
+    body{
+        margin: 0;
+        display: flex;
+        justify-content: flex-end;
+        font-family: cursive;
+    }
 
-<body>
-    <video src="../images/vertivina5.mp4" autoplay loop>
+    video{
+        position: fixed;
 
-    </video>
-</body>
+        min-height: 100%;
+        min-width: 100%;
 
+        top: 50%;
+        left: 50%;
+
+        transform: translateX(-50%) translateY(-50%);
+
+        z-index: -1;
+        -webkit-filter: sepia(100%);
+    }
 
 
