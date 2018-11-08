@@ -17,6 +17,20 @@ namespace vertivina.Controllers
             //return View(productos);
             return View();
         }
+        
+        //Por si se quiere conectar a la base de datos aqui está el codigo
+        /* 
+         public async Task<IActionResult> Index(searchString){
+              var productos = from m in _context.Productos2
+                 select m;
+             if (!String.IsNullOrEmpty(searchString))
+            {
+                productos = productos.Where(s => s.Nombre.Contains(searchString));
+            }
+
+            return View(await productos.ToListAsync());
+         }
+        */
 
 
     }
