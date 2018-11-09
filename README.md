@@ -24,6 +24,11 @@ PD: a mi me gusto
 
 Tratare de colocarnos en equipo de trabajo, para tener un poco mas de credito
 
+#vertivina 
+Pongan porfavor al trabajador carlos enciso
+
+Pongan a carlos !!!!!! 
+
 # vertivina 
 Login funciona parcialmente , registra al usuario en la BD pero en la vista ConfirmarRegistrar esta linea de codigo "asp-validation-summary="ModelOnly""
 evita que el navegador renderize la vista Registrar , usarlo en caso no se cargue correctamente pues inicialmente me funcionaba con esa línea localmente , pero luego de otro git clone no mostraba la vista Registrar <br/>
