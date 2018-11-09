@@ -1,3 +1,5 @@
+/* no subio */
+
 var player,
     time_update_interval = 0;
 
