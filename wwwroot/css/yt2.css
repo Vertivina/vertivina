@@ -1,0 +1,90 @@
+#video-placeholder {
+border: 1px #2C2C2C solid;
+}
+/* body,html{
+  overflow:hidden
+} */
+#body1 {
+    background: #0a0a0a;
+    height: 1500px;
+
+}
+#play {
+    position: absolute;
+    left: 800px;
+    color: #fff;
+    text-decoration: none;
+    text-shadow: 1px 1px 1px #000;
+    top: 590px;
+}
+
+#pause {
+    position: absolute;
+    left: 700px;
+    color: #fff;
+    text-decoration: none;
+    text-shadow: 1px 1px 1px #000;
+    top: 590px;
+}
+#mute-toggle {
+    position: absolute;
+    left: 750px;
+    color: #fff;
+    text-decoration: none;
+    text-shadow: 1px 1px 1px #000;
+    top: 590px;
+}
+#timetime {
+    position: absolute;
+    font-family: Roboto;
+    left: 735px;
+    top: 535px;
+        color: #fff;
+    text-decoration: none;
+    text-shadow: 1px 1px 1px #000;
+    top: 625px;
+}
+.material-icons.custom { 
+    color: #fff; }
+#next {
+    position: absolute;
+    left: 850px;
+    bottom: 263px;
+        color: #fff;
+    text-decoration: none;
+    text-shadow: 1px 1px 1px #000;
+    top: 590px;
+}
+#prev {
+    position: absolute;
+    left: 650px;
+    bottom: 263px;
+    color: #fff;
+    text-decoration: none;
+    text-shadow: 1px 1px 1px #000;
+    top: 590px;
+}
+#e1 {
+    position:absolute;
+    left: 50px;
+    top: 90px;
+}
+#e2 {
+    position:absolute;
+    left: 50px;
+    top: 280px;
+}
+#e3 {
+    position:absolute;
+    left: 50px;
+    top: 480px;
+}
+#text {
+        position: fixed;
+    left: 400px;
+    bottom: 263px;
+    color: #2C2C2C;
+    text-decoration: none;
+    text-shadow: 1px 1px 1px #000;
+    top: 700px;
+}

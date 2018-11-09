@@ -1,35 +1,57 @@
+@{
+    ViewData["Title"] = "About";
+}
+ <link href="@Url.Content("~/css/yt.css")" rel="stylesheet" type="text/css" />
+ <link href="@Url.Content("~/css/yt2.css")" rel="stylesheet" type="text/css" />
+ <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/styles/default.min.css">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/styles/tomorrow.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="demo.css" type="text/css">
+ @section Scripts
+{
+  <script src="@Url.Content("~/js/yt.js")"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/highlight.min.js"></script>
+  <script src="https://www.youtube.com/iframe_api"></script>
+}
 
-<script type="text/javascript">
-
-$(document).ready(function(){
-    window.setTimeout(function(){
-        window.location='http://localhost:5000/Home/Index';
-        }, 1000);
-});
-
-</script>
 
 
-<br><br><br><br><br>    
-<div style="margin-top:100;" class="container">
 
-<div class="row">
-<div class="col-md-12" style=" background-color:lightgreen;">
-    <h1 style="text-align:center;color grey;font-size:50px;">
-    Bienvenido a la familia de Vertivina <br>
+    
+    
+    
+    
+
+<br>
+<center>
+    
+         <p style="text-align:center;margin-left:200px;color:grey;text-shadow:2px 2px white;font-size:20px;">
+    Bienvenido a la familia de Vertivina -
     Cuidamos a tus engreídos como si fueran los nuestros.
-    </h1>
-   <center>
-    <p style="text-align:center">
+    </p> 
+        
+    
+</center>
+<div  id="video-placeholder"></div>
 
-        <a>@Html.ActionLink("Volver al inicio", "Index", "Home") </a> 
-    </p>
-    <p>
-        <img style="border-radius:40px;width:40%;height:500px;" src="~/images/wow.jpg" class="img-responsive" >
+<div id="controls">
+            <p style="color: #2C2C2C;" id="timetime"><span id="current-time">0:00</span> / <span id="duration">0:00</span></p>
+            <i style="color: #2C2C2C;" id="play" class="fa fa-play"></i>
+            <i style="color: #2C2C2C;" id="pause" class="fa fa-pause"></i>
+            <i style="color: #2C2C2C;" id="mute-toggle" class="fa fa-volume-up"></i>
+            <i style="color: #2C2C2C;" id="next" class="fa fa-forward"></i>
+            <i style="color: #2C2C2C;" id="prev" class="fa fa-backward"></i>
+            <img id="e2" class="thumbnail" src="http://img.youtube.com/vi/Mh64-FRUEog/hqdefault.jpg" data-video-id="Mh64-FRUEog" title="Mh64-FRUEog">
+            <img id="e1" class="thumbnail" src="http://img.youtube.com/vi/92yHw3WEMZU/hqdefault.jpg" data-video-id="92yHw3WEMZU" title="92yHw3WEMZU">
+            <img id="e3" class="thumbnail" src="http://img.youtube.com/vi/N2yXLkg3Ltg/hqdefault.jpg" data-video-id="N2yXLkg3Ltg" title="N2yXLkg3Ltg">
+</div>
 
-    </p>
-    </center>
-    <br>
-</div>
-</div>
-</div>
+<br>
+<center>
+    <a>@Html.ActionLink("Volver al inicio", "Index", "Home") </a> 
+</center>
+
+
+
+

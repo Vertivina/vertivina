@@ -1,8 +1,42 @@
 ﻿@{
-    ViewData["Title"] = "Adopcion";
+    ViewData["Title"] = "About";
 }
-<h2>@ViewData["Title"]</h2>
-<h3>Todas las adopciones posibles</h3>
+ <link href="@Url.Content("~/css/yt.css")" rel="stylesheet" type="text/css" />
+ <link href="@Url.Content("~/css/yt2.css")" rel="stylesheet" type="text/css" />
+ <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/styles/default.min.css">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/styles/tomorrow.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="demo.css" type="text/css">
+ @section Scripts
+{
+  <script src="@Url.Content("~/js/yt.js")"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/highlight.min.js"></script>
+  <script src="https://www.youtube.com/iframe_api"></script>
+}
 
-<p>Use this area to provide additional information.</p>
-<p>Aqui ponemos todo relacionado a adopciones</p>
+
+
+
+    
+    
+    
+    
+
+
+<div  id="video-placeholder"></div>
+
+<div id="controls">
+            <p style="color: #2C2C2C;" id="timetime"><span id="current-time">0:00</span> / <span id="duration">0:00</span></p>
+            <i style="color: #2C2C2C;" id="play" class="fa fa-play"></i>
+            <i style="color: #2C2C2C;" id="pause" class="fa fa-pause"></i>
+            <i style="color: #2C2C2C;" id="mute-toggle" class="fa fa-volume-up"></i>
+            <i style="color: #2C2C2C;" id="next" class="fa fa-forward"></i>
+            <i style="color: #2C2C2C;" id="prev" class="fa fa-backward"></i>
+            <img id="e2" class="thumbnail" src="http://img.youtube.com/vi/Mh64-FRUEog/hqdefault.jpg" data-video-id="Mh64-FRUEog" title="Mh64-FRUEog">
+            <img id="e1" class="thumbnail" src="http://img.youtube.com/vi/92yHw3WEMZU/hqdefault.jpg" data-video-id="92yHw3WEMZU" title="92yHw3WEMZU">
+            <img id="e3" class="thumbnail" src="http://img.youtube.com/vi/N2yXLkg3Ltg/hqdefault.jpg" data-video-id="N2yXLkg3Ltg" title="N2yXLkg3Ltg">
+</div>
+
+
+
