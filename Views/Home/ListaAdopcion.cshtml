@@ -56,8 +56,8 @@
     <input type="submit" value="Regresar" class="btn btn-info"/>  
     </form>
 </div>
-
-<div class="container"> 
+<body>
+    <div class="container"> 
       <div class="row" style="background-color:whitesmoke; padding:15px;box-shadow: 0 0 20px blue;"> 
          <div class="col-md-12">
              <form asp-controller="Servicios" asp-action="Index">
@@ -68,12 +68,98 @@
             </form>
 
             <table class="table">
+                <thead>
+                     <tr>
+                        <td>
+                             Nombre del nuevo dueño
+                        </td>
+                        <td>
+                             @Html.DisplayNameFor(model => model.Mascota)
+                        </td>
+                         <td>
+                             @Html.DisplayNameFor(model => model.NombreMascota)
+                        </td>
+                        <td>
+                            @Html.DisplayNameFor(model => model.Telefono)
+                        </td>
+                        <td>
+                            Tipo de telefono
+                        </td>
+                        <td>
+                            @Html.DisplayNameFor(model => model.email)
+                        </td>
+                        <td>
+                             Fecha de adopcion
+                        </td>
+                        <td>
+                             Ocupacion del dueño
+                        </td>
+                        <td>
+                             @Html.DisplayNameFor(model => model.Direccion)
+                        </td>
+                        <td>
+                             @Html.DisplayNameFor(model => model.Motivo1)
+                        </td>
+                         <td>
+                             @Html.DisplayNameFor(model => model.Motivo2)
+                        </td>
+                         <td>
+                            @Html.DisplayNameFor(model => model.Motivo3)
+                        </td>
 
+                     </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                     <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.NombreDueño)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Mascota)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.NombreMascota)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Telefono)
+                        </td>
+                        <td>
+                           @Html.DisplayFor(modelItem => item.TipoTelefono)
+                        </td>
+                        <td>
+                           @Html.DisplayFor(modelItem => item.email) 
+                        </td>
+                        <td>
+                          @Html.DisplayFor(modelItem => item.FechaAdop) 
+                        </td>
+                        <td>
+                           @Html.DisplayFor(modelItem => item.Ocupacion) 
+                        </td>
+                        <td>
+                          @Html.DisplayFor(modelItem => item.Direccion)  
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Motivo1)
+                        </td>
+                        <td>
+                          @Html.DisplayFor(modelItem => item.Motivo2)  
+                        </td>
+                         <td>
+                           @Html.DisplayFor(modelItem => item.Motivo3) 
+                        </td>
+                        
 
+                     </tr>
+                    }
+
+                </tbody>
                 
             </table>
 
          </div>
       </div>
-</div>
+    </div>
 
+</body>
