@@ -120,6 +120,8 @@ namespace Models.MvcContext
 
         public DbSet<Adopcion> Adopcion { get; set; }
 
+        public DbSet<Pareja> Pareja { get; set; }
+
     }
     #endregion
 }
