@@ -8,7 +8,7 @@
 <h2>@ViewData["Title"]</h2>
 <h3>Adoptar siempre es la opción</h3>
 
-<p>Vertivina y su compromiso por darles una mejor vida a los animales</p>
+<em><h4>Vertivina y su compromiso por darles una mejor vida a los animales</h4></em>
 
 </center>
 
@@ -83,9 +83,9 @@
                       <div class="row">   
                           <div class="col-md-3"></div>
                         <div class="col-md-6">
-                            <form asp-action="Adopcion" class="form-group" >
+                            <form style="border-radius:25px;box-shadow: 5px 5px blue, 10px 10px red, 15px 15px green;background-color:white;padding:20px;" asp-action="Adopcion" class="form-group" >
                                 <div  class="text-primary"></div>
-                                <h3>Formulario para adopción de mascotas</h3>
+                               <u> <h3 style="text-align:center">Formulario para adopción de mascotas</h3></u>
                                 <div class="form-group">
                                      Tu nombre:<input type="text" class="form-control" asp-for="NombreDueño">
                                      <span asp-validation-for="NombreDueño" class="text-danger"></span>
@@ -93,12 +93,12 @@
                                  <div class="form-group">
                  <label for="">Selecciona la mascota:</label>
                  <select  class="form-control" asp-for="Mascota">
-                    <option value="1">Perro</option>
-                    <option value="2">Gato</option>
-                    <option value="3">Gato</option>
-                    <option value="4">Gato</option>
-                    <option value="5">Gato</option>
-                    <option value="6">Gato</option>
+                    <option value="1">MAX</option>
+                    <option value="2">Jerry</option>
+                    <option value="3">Tom</option>
+                    <option value="4">Sam</option>
+                    <option value="5">Cielo</option>
+                    <option value="6">Aarom</option>
                 </select>                
             </div>
                                 <div class="form-group">
@@ -147,7 +147,9 @@
                                 </div>
                                 
                                 <div class="form-group">
+                                    <center>
                                 <input type="submit" name="btnAdoptar" value="Adoptar">
+                                </center>
                                 </div>
                                 
                                
