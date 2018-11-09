@@ -88,6 +88,10 @@ namespace vertivina.Controllers
 
             return View(await citas.ToListAsync());
         }
+        public IActionResult ListaAdopcion()
+        {
+            return View();    
+        }
 
 
         public IActionResult Faq()
