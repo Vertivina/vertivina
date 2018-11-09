@@ -18,7 +18,8 @@ namespace vertivina.Models
         [EmailAddress]
         public string email { get; set; }
 
-        [MinLength(12)]
+        [Required]
+        [MinLength(8)]
         public string user { get; set; }
 
         [Required]
