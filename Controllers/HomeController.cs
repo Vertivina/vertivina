@@ -27,7 +27,7 @@ namespace vertivina.Controllers
         }
         public IActionResult Registrar()
         {
-            ViewData["Message"] = "Your Registrar description page.";
+            ViewData["Message"] = "Registre aqui";
 
             return View();
         }
@@ -36,6 +36,12 @@ namespace vertivina.Controllers
         public IActionResult About()
         {
             ViewData["Message"] = "Your application description page.";
+
+            return View();
+        }
+
+        public IActionResult MenuUsuario()
+        {
 
             return View();
         }
@@ -125,7 +131,8 @@ namespace vertivina.Controllers
             }
             return View(faq);
         }
-
+        [HttpPost]
+        [ValidateAntiForgeryToken]
         public async Task<IActionResult> Registrar([Bind("names,email,user,pass,pass2")] Registrar registrar)
         {
             if (ModelState.IsValid)
@@ -149,7 +156,13 @@ namespace vertivina.Controllers
         {
             return View();    
         }
-        public  async Task<IActionResult> Adopcion(String buscar)
+
+        public IActionResult Adopcion()
+        {
+            return View();    
+        }
+        /*Para la conexion con la base de datos
+         public  async Task<IActionResult> Adopcion(String buscar)
         {
              var adopciones = from m in _context.Mascota
                  select m;
@@ -159,7 +172,7 @@ namespace vertivina.Controllers
             }
 
             return View(await adopciones.ToListAsync());
-        }
+        }*/
       
         [HttpPost]
         [ValidateAntiForgeryToken]

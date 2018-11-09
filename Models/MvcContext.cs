@@ -39,7 +39,8 @@ namespace Models.MvcContext
                         Cantidad = 15,
                         Desc = "Articulo para tu cachorro",
                         Tipo = "Correa",
-                        Precio = 150.00
+                        Precio = 150.00,
+                        Imagen="https://static2.lucasylola.es/5905-large_default/correa-para-perro-flexi-new-comfort-de-cordon.jpg"
                     },
                     new Producto2
                     {
@@ -113,6 +114,10 @@ namespace Models.MvcContext
         public DbSet<Faq> Faq { get; set; }
         public DbSet<Mascota> Mascota{ get; set; }
         
+        public DbSet<Registrar> Registrar{get; set;}
+
+        public DbSet<Comunidad> Comunidad{get; set;}
+
     }
     #endregion
 }
