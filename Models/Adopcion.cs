@@ -18,8 +18,13 @@ namespace vertivina.Models
 
         [Required]
         public int Telefono { get; set; }
-        [Required]
+        
+
         public string TipoTelefono { get; set; }
+
+        [Required]
+        [EmailAddress]
+        public string email { get; set; }
 
         public string NombreMascota { get; set; }
         [Required]
@@ -27,7 +32,7 @@ namespace vertivina.Models
         public DateTime FechaAdop { get; set; }
 
 
-        public string TipoMascota { get; set; }
+        
         public string Ocupacion { get; set; }
         public string Direccion { get; set; }
 
