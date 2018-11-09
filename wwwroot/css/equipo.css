@@ -13,3 +13,7 @@
 	justify-content: center;
 	flex-wrap: wrap;
 }
+
+#blog article{
+	margin: 15px;
+}
