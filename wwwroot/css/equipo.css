@@ -7,3 +7,9 @@
     font-size: 1.8em;
     margin-bottom: 10px;
 }
+
+#blog .contenedor {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
