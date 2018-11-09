@@ -1,4 +1,41 @@
 
+<link href="@Url.Content("~/css/cargando.css")" rel="stylesheet" type="text/css" />
+ @section Scripts
+{
+  <script src="@Url.Content("~/js/home.js")"></script>
+}
 
 <h3>bien hecho papu</h3>
-<!-- no me deja guardar -->
+
+
+<center>
+    <h1>
+        Tu solicitud ha sido enviada , dejanos ocuparnos del resto del trámite ; dentro de poco
+        te estaremos llamando.
+    </h1>
+    <br>
+    <a>@Html.ActionLink("Regresar as la página principal", "Index", "Home") </a> 
+</center>
+
+<br>
+<div class="container">
+	<div class="row">
+		<div id="loader">
+    		<div class="dot"></div>
+			<div class="dot"></div>
+			<div class="dot"></div>
+			<div class="dot"></div>
+			<div class="dot"></div>
+			<div class="dot"></div>
+			<div class="dot"></div>
+			<div class="dot"></div>
+			<div class="lading"></div>
+		</div>
+	</div>
+</div>
+
+<br><br><br><br>
+
+<center>
+    <img class="img-responsive" src="../images/tierno.jpg" alt="" style="width:400px;border-radius:25px;box-shadow:5px 5px blue;" />
+</center>
