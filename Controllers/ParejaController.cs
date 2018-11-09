@@ -25,7 +25,7 @@ namespace vertivina.Controllers
         {
             return View();
         }
-
+        /* no me dejaba guardar */
         public async Task<IActionResult> ListaCita(string searchString)
         {
             var citas = from m in _context.Cita

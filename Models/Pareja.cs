@@ -9,7 +9,7 @@ namespace vertivina.Models
     {
         public int ID { get; set; }
 
-
+        /* no me deja guardar */
         [Required]
         [MinLength(20)]
         public string NombreDueño { get; set; }
