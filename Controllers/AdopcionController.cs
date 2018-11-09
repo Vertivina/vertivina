@@ -103,7 +103,7 @@ namespace vertivina.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Adopcion([Bind("NombreDueño,Mascota,Telefono,TipoTelefono,NombreMascota,FechaAdop,Ocupacion,Direccion,Motivo1,Motivo2,Motivo3")] Adopcion adopcion)
+        public async Task<IActionResult> Adopcion([Bind("NombreDueño,Mascota,Telefono,TipoTelefono,email,NombreMascota,FechaAdop,Ocupacion,Direccion,Motivo1,Motivo2,Motivo3")] Adopcion adopcion)
         {
             if (ModelState.IsValid)
             {
