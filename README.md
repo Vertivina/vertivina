@@ -27,6 +27,7 @@ Tratare de colocarnos en equipo de trabajo, para tener un poco mas de credito
 #vertivina 
 Pongan porfavor al trabajador carlos enciso
 
+Pongan a carlos !!!!!! 
 
 # vertivina 
 Login funciona parcialmente , registra al usuario en la BD pero en la vista ConfirmarRegistrar esta linea de codigo "asp-validation-summary="ModelOnly""
