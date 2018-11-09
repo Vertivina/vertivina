@@ -11,7 +11,7 @@ namespace vertivina.Models
 
 
         [Required]
-        [MinLength(35)]
+        [MinLength(20)]
         public string NombreDueño { get; set; }
         [Required]
         public string Mascota { get; set; }
