@@ -1,3 +1,7 @@
+
+
+
+
 # vertivina
 Un simple repositorio de prueba.<br/>
 Si es posible, nos lo quedamos<br/>
@@ -16,6 +20,9 @@ Procedere a mejorar el estilo de nuestra vista ... nosotros (Contact)
 Me gustaria que me escriban, por el git hub, diciendome si les gusta el video, o lo cambiamos algo mas relacionado al tema
 PD: a mi me gusto
 
+# vertivina 
+Login funciona parcialmente , registra al usuario en la BD pero en la vista ConfirmarRegistrar esta linea de codigo "asp-validation-summary="ModelOnly""
+evita que el navegador renderize la vista Registrar , usarlo en caso no se cargue correctamente pues inicialmente me funcionaba con esa línea localmente , pero luego de otro git clone no mostraba la vista Registrar <br/>
 
 # vertivina 
 Procedere a poner la pagina de login en responsive !! =) <br/>
