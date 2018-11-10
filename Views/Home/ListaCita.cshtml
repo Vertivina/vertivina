@@ -107,6 +107,9 @@
                  <th>
                     Direccion (De no haber es en el local)
                 </th>
+                 <th>
+                    Opciones
+                </th>
              </tr>
             </thead>
             <tbody>    
@@ -140,15 +143,18 @@
                 <th>
                      @Html.DisplayFor(modelItem => item.Hora)
                 </th>
-                <th>
-                    
-                </th>
+               
                 <th>
                     @if(item.Direccion!=null){
                         @Html.DisplayFor(modelItem => item.Direccion)
                     }else{
                          @Html.Display("En el local")
                     }
+
+                </th>
+                <th>
+                   <a asp-action="EditarCita" asp-route-id="@item.ID"> Editar</a>
+                   <a asp-action="EliminarCita" asp-route-id="@item.ID"> Eliminar</a>
 
                 </th>
                 
