@@ -13505,11 +13505,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Verti5\\vertivina\\pangu.csproj",
+      "projectUniqueName": "C:\\Verti10\\vertivina\\pangu.csproj",
       "projectName": "pangu",
-      "projectPath": "C:\\Verti5\\vertivina\\pangu.csproj",
+      "projectPath": "C:\\Verti10\\vertivina\\pangu.csproj",
       "packagesPath": "C:\\Users\\Carlos\\.nuget\\packages\\",
-      "outputPath": "C:\\Verti5\\vertivina\\obj\\",
+      "outputPath": "C:\\Verti10\\vertivina\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

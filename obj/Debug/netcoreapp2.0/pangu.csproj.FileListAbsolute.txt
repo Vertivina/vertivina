@@ -53,3 +53,14 @@ C:\Verti5\vertivina\bin\Debug\netcoreapp2.0\pangu.runtimeconfig.json
 C:\Verti5\vertivina\bin\Debug\netcoreapp2.0\pangu.runtimeconfig.dev.json
 C:\Verti5\vertivina\bin\Debug\netcoreapp2.0\pangu.dll
 C:\Verti5\vertivina\bin\Debug\netcoreapp2.0\pangu.pdb
+C:\Verti10\vertivina\bin\Debug\netcoreapp2.0\pangu.deps.json
+C:\Verti10\vertivina\bin\Debug\netcoreapp2.0\pangu.runtimeconfig.json
+C:\Verti10\vertivina\bin\Debug\netcoreapp2.0\pangu.runtimeconfig.dev.json
+C:\Verti10\vertivina\bin\Debug\netcoreapp2.0\pangu.dll
+C:\Verti10\vertivina\bin\Debug\netcoreapp2.0\pangu.pdb
+C:\Verti10\vertivina\obj\Debug\netcoreapp2.0\pangu.csprojAssemblyReference.cache
+C:\Verti10\vertivina\obj\Debug\netcoreapp2.0\pangu.csproj.CoreCompileInputs.cache
+C:\Verti10\vertivina\obj\Debug\netcoreapp2.0\pangu.AssemblyInfoInputs.cache
+C:\Verti10\vertivina\obj\Debug\netcoreapp2.0\pangu.AssemblyInfo.cs
+C:\Verti10\vertivina\obj\Debug\netcoreapp2.0\pangu.dll
+C:\Verti10\vertivina\obj\Debug\netcoreapp2.0\pangu.pdb
