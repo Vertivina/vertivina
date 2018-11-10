@@ -1,0 +1,163 @@
+@{
+    ViewData["Title"] = "Adopcion";
+     Layout="~/Views/Shared/_Layout.cshtml";
+}
+
+@model vertivina.Models.Adopcion
+<center>
+<h2>@ViewData["Title"]</h2>
+<h3>Adoptar siempre es la opción</h3>
+
+<em><h4>Vertivina y su compromiso por darles una mejor vida a los animales</h4></em>
+
+</center>
+
+<!doctype html>
+<html lang="en">
+<head>
+
+	<!--     Fuentes e iconos con CDN // conectado a internet vertivina    -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
+    
+   <!-- no sube sss-->
+   <!--CSS EN LINEA STYLE-->
+    <style>
+    
+.panel-group {
+    margin-bottom: 0;
+}
+.panel-group .panel {
+    border-radius: 0;
+    box-shadow: none;
+}
+.panel-group .panel .panel-heading {
+    padding: 0;
+}
+.panel-group .panel .panel-heading h4 a {
+    background: #f6f9fc;
+    display: block;
+    font-size: 15px;
+    line-height: 20px;
+    padding: 15px;
+    text-decoration: none;
+    transition: 0.15s all ease-in-out;
+}
+.panel-group .panel .panel-heading h4 a:hover, .panel-group .panel .panel-heading h4 a:not(.collapsed) {
+    /*background: #fffssssssss;*/
+    transition: 0.15s all ease-in-out;
+}
+.panel-group .panel .panel-heading h4 a:not(.collapsed) i:before {
+    content: "-";
+    font-size: 30px;
+    line-height: 10px;
+}
+.panel-group .panel .panel-heading h4 a i {
+    color: #999;
+    font-size: 12px;
+}
+.panel-group .panel .panel-body {
+    padding-top: 0;
+}
+.panel-group .panel .panel-heading + .panel-collapse > .list-group,
+.panel-group .panel .panel-heading + .panel-collapse > .panel-body {
+    border-top: none;
+}
+.panel-group .panel + .panel {
+    border-top: none;
+    margin-top: 0;
+}
+
+.fondopantalla{
+    background-image: url(images/aarom.jpg);
+}
+  
+    </style>
+</head>
+
+
+   
+	
+
+</html>
+                    <div class="container">
+                      <div class="row">   
+                          <div class="col-md-3"></div>
+                        <div class="col-md-6">
+                            <form style="border-radius:25px;box-shadow: 5px 5px blue, 10px 10px red, 15px 15px green;background-color:white;padding:20px;" asp-action="Adopcion" class="form-group" >
+                                <div  class="text-primary"></div>
+                               <u> <h3 style="text-align:center">Formulario para adopción de mascotas</h3></u>
+                                <div class="form-group">
+                                     Tu nombre:<input type="text" class="form-control" asp-for="NombreDueño">
+                                     <span asp-validation-for="NombreDueño" class="text-danger"></span>
+                                </div>
+                                 <div class="form-group">
+                 <label for="">Selecciona la mascota:</label>
+                 <select  class="form-control" asp-for="Mascota">
+                    <option value="1">MAX</option>
+                    <option value="2">Jerry</option>
+                    <option value="3">Tom</option>
+                    <option value="4">Sam</option>
+                    <option value="5">Cielo</option>
+                    <option value="6">Aarom</option>
+                </select>                
+            </div>
+                                <div class="form-group">
+                                    Teléfono o celular:<input type="numeric" asp-for="Telefono" class="form-control">
+                                    <span asp-validation-for="Telefono" class="text-danger"></span>
+                                </div>
+                                <div class="form-group">
+                        <select  class="form-control" asp-for="TipoTelefono">
+                             <option value="Fijo">Fijo</option>
+                             <option value="Movil">Movil</option>
+                        </select>
+                    </div>
+                                 <div class="form-group">
+                                    Correo:<input type="email" asp-for="email" class="form-control">
+                                    <span asp-validation-for="email" class="text-danger"></span>
+                                </div>
+                                
+                               
+                                <div class="form-group">
+                                     Nuevo nombre para el animalito:<input type="text" class="form-control" asp-for="NombreMascota">
+                                     <span asp-validation-for="NombreMascota" class="text-danger"></span>
+                                </div>
+                                <div class="form-group">
+                                     Fecha para recoger a la mascota:<input type="Date" class="form-control" asp-for="FechaAdop">
+                                     <span asp-validation-for="FechaAdop" class="text-danger"></span>
+                                </div>
+                                <div class="form-group">
+                                     A que te dedicas:<input type="text" class="form-control" asp-for="Ocupacion">
+                                     <span asp-validation-for="Ocupacion" class="text-danger"></span>
+                                </div>
+                                <div class="form-group">
+                                     Direccion en donde vives:<input type="text" class="form-control" asp-for="Direccion">
+                                     <span asp-validation-for="Direccion" class="text-danger"></span>
+                                </div>
+                                  <div class="form-group">
+                                     Ingresa un motivo 1:<input type="text" class="form-control" asp-for="Motivo1">
+                                     <span asp-validation-for="Motivo1" class="text-danger"></span>
+                                </div>
+                                  <div class="form-group">
+                                     Ingresa un motivo 2:<input type="text" class="form-control" asp-for="Motivo2">
+                                     <span asp-validation-for="Motivo2" class="text-danger"></span>
+                                </div>
+                                  <div class="form-group">
+                                     Ingresa un motivo 3:<input type="text" class="form-control" asp-for="Motivo3">
+                                     <span asp-validation-for="Motivo3" class="text-danger"></span>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <center>
+                                <input type="submit" name="btnAdoptar" value="Adoptar">
+                                </center>
+                                </div>
+                                
+                               
+                                <br>
+                                </form> 
+                                <div class="col-md-3"></div>
+                            </div>
+                          </div> 
+                     
+
+

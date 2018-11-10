@@ -15,9 +15,9 @@
 	               		<hr />
 	               	</div>
 	            </div> 
-				<div class="main-login main-center">
-					<form class="form-horizontal" method="post" asp-action="Registrar">
-						
+				<div  class="text-danger" class="main-login main-center">
+					<form  class="form-horizontal" method="post" asp-action="Registrar">
+						<!--x alguna razon quitando esta línea funciona el registro en la BD asp-validation-summary="ModelOnly" -->
 						<div class="form-group">
 							<label for="name" class="cols-sm-2 control-label">Nombres y Apellidos</label>
 							<div class="cols-sm-10">

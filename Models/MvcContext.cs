@@ -118,6 +118,11 @@ namespace Models.MvcContext
 
         public DbSet<Comunidad> Comunidad{get; set;}
 
+        public DbSet<Adopcion> Adopcion { get; set; }
+
+        public DbSet<Pareja> Pareja { get; set; } 
+       /*  no me dejaba guardar */
+
     }
     #endregion
 }

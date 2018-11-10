@@ -1,11 +1,16 @@
 ﻿<center>
 <h2>@ViewData["Title"]</h2>
 </center>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="../css/equipo.css"> 
+</head>
+
 <style>
     body{
         margin: 0;
-        display: flex;
-        justify-content: flex-end;
+        
+        
         font-family: cursive;
     }
 
@@ -29,7 +34,7 @@
         background: rgba(0, 0, 0, 0.5);
         color: #fff;
         padding: 20px;
-        margin-left: 500px;
+        margin-left: 760px;
     }
 </style>
 
@@ -61,6 +66,44 @@ Contamos con más de 5 años en el servicio veterinario conocemos las necesidade
     <strong>Contactenos </strong><a asp-controller="Home" asp-action="Cita">Aquí</a>
 </address>
     </main>
+
+    
+    <br>
+    <section id="blog">
+			<h3 style="color:white; text-align: center; font-family: 'Pacifico', cursive">Nuestro Equipo</h3>
+			<div class="contenedor">
+
+                <article>
+                    <h4>Julio</h4>
+					<img src="../images/julio.jpg">
+					<p>Diseñador</p>
+				</article>
+
+                <article>
+                    <h4>Cesar</h4>
+					<img src="../images/cesar.jpg">
+					<p>Diseñador</p>
+				</article>
+
+                <article>
+                    <h4>Alvaro</h4>
+					<img src="../images/alvaro.jpg">
+					<p>Lider del Grupo</p>
+				</article>
+
+                
+                <article>
+                    <h4>Arom</h4>
+					<img src="../images/aarom.jpg">
+					<p>Programador</p>
+				</article>
+
+				
+
+			</div>			
+		</section>
+
+ 
 </body>
 
 

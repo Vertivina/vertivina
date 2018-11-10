@@ -1,0 +1,172 @@
+@model List<Mascota>
+    
+@{
+    ViewData["Title"] = "Adopcion";
+     Layout="~/Views/Shared/_Layout.cshtml";
+}
+<h2>@ViewData["Title"]</h2>
+<style>
+    #info{
+        background: black;
+        color: beige;
+        text-align: center;
+        padding: 20px;
+    }
+    #info.contenedor{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .info-mascota{
+        margin: 20px;
+    }
+    .thumbnail{
+        background-color: black;
+        border:solid white 2px;
+    }
+    .info-mascota img{
+        width: 180px;
+        height: 180px;
+        border-radius: 50%;
+        border: 7px solid white;
+    
+    }
+
+</style>
+<div><center>
+    <form asp-action="" method="GET">
+    <input type="text" name="buscar" class="form-control" 
+    value="@ViewBag.buscar" style="width: 300px;" placeholder="Busca que mascota adoptar"><br>
+    <button type="submit" class="btn btn-primary">Buscar</button><br><br>
+    </center>
+</form>
+</div>
+
+<section id="info" style=" box-shadow: 5px 5px #888888;border-radius:25px;">
+<h3>Para muchos de nosotros las mascotas no son simples compañeros, son miembros de la familia.</h3>
+<div class="contenedor">
+    <div class="info-mascota ">
+        <div class="col-md-offset-1 col-md-4 col-xs-4 col-sm-offset-4 col-xs-offset-3 thumbnail">
+        <img src="../images/max.jpg"  >
+        <h4>Max</h4>
+        <p>
+            is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        </p>
+        <a>@Html.ActionLink("adopta a MAX", "Adopcion", "Adopcion")</a>
+        </div>
+    </div>
+     <div class="info-mascota ">
+        <div class="col-md-offset-1 col-md-4 col-xs-4 col-sm-offset-4 col-xs-offset-3 thumbnail">
+        <img src="../images/jerry.jpg"  >
+        <h4>Jerry</h4>
+        <p>
+            is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        </p>
+        <a>@Html.ActionLink("adopta a Jerry", "Adopcion", "Adopcion")</a>
+        </div>
+    </div>
+     <div class="info-mascota ">
+        <div class="col-md-offset-1 col-md-4 col-xs-4 col-sm-offset-4 col-xs-offset-3 thumbnail">
+        <img src="../images/tom.jpg"  >
+        <h4>Tom</h4>
+        <p>
+            is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        </p>
+        <a>@Html.ActionLink("adopta a Tom", "Adopcion", "Adopcion")</a>
+        </div>
+    </div>
+     <div class="info-mascota ">
+        <div class="col-md-offset-1 col-md-4 col-xs-4 col-sm-offset-4 col-xs-offset-3 thumbnail">
+        <img src="../images/sam.jpg"  >
+        <h4>Sam</h4>
+        <p>
+            is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        </p>
+        <a>@Html.ActionLink("adopta a Sam", "Adopcion", "Adopcion")</a>
+        </div>
+    </div>
+     <div class="info-mascota ">
+        <div class="col-md-offset-1 col-md-4 col-xs-4 col-sm-offset-4 col-xs-offset-3 thumbnail">
+        <img src="../images/cielo.jpg"  >
+        <h4>Cielo</h4>
+        <p>
+            is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        </p>
+        <a>@Html.ActionLink("adopta a Cielo", "Adopcion", "Adopcion")</a>
+        </div>
+    </div>
+     <div class="info-mascota ">
+        <div class="col-md-offset-1 col-md-4 col-xs-4 col-sm-offset-4 col-xs-offset-3 thumbnail">
+        <img src="../images/arom.jpg"  >
+        <h4>Aroom</h4>
+        <p>
+            is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        </p>
+        <a>@Html.ActionLink("adopta a Aroom", "Adopcion", "Adopcion")</a>
+        </div>
+    </div>
+     <div class="info-mascota ">
+        <div class="col-md-offset-1 col-md-4 col-xs-4 col-sm-offset-4 col-xs-offset-3 thumbnail">
+        <img src="../images/max.jpg"  >
+        <h4>Max</h4>
+        <p>
+            is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        </p>
+        <a>@Html.ActionLink("adopta a Aron", "Adopcion", "Adopcion")</a>
+        </div>
+    </div>
+    <div class="info-mascota ">
+        <div class="col-md-offset-1 col-md-4 col-xs-4 col-sm-offset-4 col-xs-offset-3 thumbnail">
+        <img src="../images/max.jpg"  >
+        <h4>Max</h4>
+        <p>
+            is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        </p>
+        <a>@Html.ActionLink("adopta a Aron", "Adopcion", "Adopcion")</a>
+        </div>
+    </div>
+
+   
+    <br>
+
+    <div class="info-mascota">
+        <!-- <div class="col-md-offset-1 col-md-4 col-xs-4 col-sm-offset-4 col-xs-offset-3">
+        <img src="../images/tom.jpg">
+        <h4>Tom</h4>
+        <a>@Html.ActionLink("adopta a Tom", "Adopcion", "Adopcion")</a>
+        </div> -->
+       <!--  no subesssssssssss -->
+    </div>
+
+    <div class="info-mascota">
+        <img src="../images/sam.jpg" >
+        <h4>Sam</h4>
+        <a>@Html.ActionLink("¿Ventajas de tener una mascota?", "Index", "Home")</a>
+        <p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+    </div>
+    <br>
+
+    
+
+
+    
+    <br>
+
+</div>
+</section>
+<center>
+<div style="padding-top:15px;">
+ <div class="row">
+    <div  class="col-md-offset-4 col-md-4 col-xs-4 col-sm-offset-4 col-xs-offset-3" >
+          <form asp-action="Faq" asp-controller="Home">
+            <input type="submit" value=" ¿Alguna duda?" class="btn btn-primary">
+
+        </form>
+    
+     </div>
+  
+ </div>
+</div>
+</center>
+
+

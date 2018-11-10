@@ -51,6 +51,31 @@ namespace vertivina.Controllers
 
             return View();
         }
+       /*
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult Login(String email, String password){
+            var u = from m in _context.Registrar
+             select m;
+            var p=from m in _context.Registrar
+             select m;
+               if (!String.IsNullOrEmpty(email) || !!String.IsNullOrEmpty(password))
+             {
+                u = u.Where(s => s.email.Contains(email));
+                p = p.Where(s => s.pass.Contains(password));
+                if(u!=null && p!=null){
+                  return RedirectToAction("MenuUsuario");
+                }else{
+                    return View();
+                }
+             }
+            return View();
+
+            
+        }
+         */
+        
+
         public IActionResult Resetpass()
         {
             ViewData["Message"] = "Your reset page.";
@@ -87,6 +112,17 @@ namespace vertivina.Controllers
             }
 
             return View(await citas.ToListAsync());
+        }
+        public async Task<IActionResult> ListaAdopcion(string searchString)
+        {
+            var adopciones = from m in _context.Adopcion
+             select m;
+               if (!String.IsNullOrEmpty(searchString))
+            {
+                adopciones = adopciones.Where(s => s.NombreDueño.Contains(searchString));
+            }
+
+            return View(await adopciones.ToListAsync()); 
         }
 
 
