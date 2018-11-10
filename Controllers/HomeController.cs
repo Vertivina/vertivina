@@ -88,9 +88,17 @@ namespace vertivina.Controllers
 
             return View(await citas.ToListAsync());
         }
-        public IActionResult ListaAdopcion()
+       
+         public async Task<IActionResult> ListaAdopcion(string searchString)
         {
-            return View();    
+             var adopciones = from m in _context.Adopcion
+             select m;
+               if (!String.IsNullOrEmpty(searchString))
+            {
+                adopciones= adopciones.Where(s => s.NombreDueño.Contains(searchString));
+            }
+
+            return View(await adopciones.ToListAsync());
         }
 
 
