@@ -49,11 +49,11 @@
 
 </style>
 
-<h2>Edit</h2>
+<h2>Editar Cita</h2>
 
 <hr />
 <div class="row">
-    <div class="col-md-4">
+    <div class="col-md-4" style="background-color:whitesmoke; padding:15px;box-shadow: 0 0 20px blue;">
         <form asp-action="EditarCita">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <input type="hidden" asp-for="ID" />
@@ -114,7 +114,13 @@
             </div>
             <div class="form-group">
                 <label asp-for="TipoCita" class="control-label"></label>
-                <input asp-for="TipoCita" class="form-control" />
+               <select  class="form-control" asp-for="TipoCita">
+                    <option value="Cirugias" id="tc1">Cirugias</option>
+                    <option value="Chequeo" id="tc2">Chequeo</option>
+                    <option value="Revision" id="tc3">Revision</option>
+                    <option value="PromPerros" id="tc4">Promoción perros</option>
+                     <option value="Parejas" id="tc4">Busqueda de Pareja</option>
+                </select>
                 <span asp-validation-for="TipoCita" class="text-danger"></span>
             </div>
             <div class="form-group">
@@ -126,14 +132,16 @@
                 <input type="submit" value="Guardar cambios" class="btn btn-success" />
             </div>
         </form>
-    </div>
-</div>
-
-<div>
+        <div>
     <form asp-action="ListaCita">
         <input type="submit" value="Volver a la lista" class="btn btn-secondary"/>
     </form>
 </div>
+    </div>
+    
+</div>
+
+
 
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}

@@ -1,7 +1,9 @@
 @model vertivina.Models.Cita
 
 
-<style>
+<style>     
+
+    
     .prise-box{width:100%;float:left;border-radius:10px;-webkit-border-radius:10px;-moz-border-radius:10px;box-shadow: rgba(158,158,158,.61) 0 2px 5px 0;margin-bottom:10px;}
 .prise-box img{width:100%;border-radius:10px 10px 0 0;-webkit-border-radius:10px 10px 0 0;-moz-border-radius:10px 10px 0 0;}
 .info-this{    float: left;   width: 100%;   background:#ececec;    padding: 15px;}
@@ -48,12 +50,21 @@
     position: relative;}
 
 </style>
+<div class="container">
+    <div class="row">
+        <div class="col-md-3 col-md-offset-4">
+            <h2 style="color:red; background-color:lightgreen; text-align:center; box-shadow: 0 0 20px red;border-radius:25px;">Advertencia</h2>
+        </div>
+        
+    </div>
 
-<h2>Advertencia</h2>
+</div>
 
-<h3>¿Estas seguro de que quieres eliminar esta cita?</h3>
-<div>
-    <hr />
+<div class="container">
+    <h3>¿Estas seguro que quieres eliminar esta cita?</h3>
+<div class="row" style="background-color:rgba(103, 203, 216, 0.788); padding:30px;box-shadow: 0 0 20px green;border-radius:25px;">
+  <div class="content">
+      
     <dl class="dl-horizontal">
         <dt>
             @Html.DisplayNameFor(model => model.Nombre)
@@ -117,18 +128,23 @@
         </dd>
         
     </dl>
-    <div>
+    </div>
+
+    </div>
+
+    </div>
+    <div style="padding:10px;">
     <form asp-action="EliminarCita">
         <input type="hidden" asp-for="ID" />
         <input type="submit" value="Eliminar" class="btn btn-danger" /> 
     </form>
     </div>
-    <div>
+    <div style="padding:10px;">
     <form asp-action="ListaCita">
         <input type="submit" value="Regresar a la lista" class="btn btn-secondary"  /> 
     </form>
     </div>
-</div>
+
 
 
 
