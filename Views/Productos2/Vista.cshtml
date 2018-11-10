@@ -1,6 +1,34 @@
-@model Producto2
+@model vertivina.Models.Producto2
 @{
     var p = Model;
 }
-<h2>@p.Nombre</h2>
+<h2> Detalles del producto</h2>
 
+<div style=" background-color:rgba(184, 210, 214, 0.788);">
+    <h3>@Html.DisplayFor(model => model.Nombre) 
+
+    </h3>
+
+    	<div class="container">
+            <div class="row">
+                 <div class="col-md-3">
+                      <img src="@Url.Content(Model.Imagen)" alt="imagen del producto" class="img-responsive">
+
+                 </div>
+
+                  <div class="col-md-6">
+                     
+
+
+                 </div>
+            </div>
+
+            <form asp-action="Index">
+                <input type="submit" value="Regresar a la lista" />
+
+            </form>
+        </div>
+			
+    <br/>
+
+</div>

@@ -123,14 +123,16 @@
                 <span asp-validation-for="Direccion" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <input type="submit" value="Save" class="btn btn-default" />
+                <input type="submit" value="Guardar cambios" class="btn btn-success" />
             </div>
         </form>
     </div>
 </div>
 
 <div>
-    <a asp-action="ListaCita    ">Back to List</a>
+    <form asp-action="ListaCita">
+        <input type="submit" value="Volver a la lista" class="btn btn-secondary"/>
+    </form>
 </div>
 
 @section Scripts {

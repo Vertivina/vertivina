@@ -38,6 +38,23 @@ namespace vertivina.Controllers
          }
        
 
+        public async Task<IActionResult> Vista(int? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var producto = await _context.Producto2
+                .SingleOrDefaultAsync(m => m.Id == id);
+            if (producto == null)
+            {
+                return NotFound();
+            }
+
+            return View(producto);
+        }
+
 
     }
 }

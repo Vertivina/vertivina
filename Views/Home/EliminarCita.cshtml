@@ -49,11 +49,10 @@
 
 </style>
 
-<h2>Delete</h2>
+<h2>Advertencia</h2>
 
 <h3>¿Estas seguro de que quieres eliminar esta cita?</h3>
 <div>
-    <h4>Cita</h4>
     <hr />
     <dl class="dl-horizontal">
         <dt>
@@ -118,12 +117,17 @@
         </dd>
         
     </dl>
-    
+    <div>
     <form asp-action="EliminarCita">
         <input type="hidden" asp-for="ID" />
-        <input type="submit" value="Eliminar" class="btn btn-default" /> |
-        <a asp-action="ListaCita">Regresar a la lista</a>
+        <input type="submit" value="Eliminar" class="btn btn-danger" /> 
     </form>
+    </div>
+    <div>
+    <form asp-action="ListaCita">
+        <input type="submit" value="Regresar a la lista" class="btn btn-secondary"  /> 
+    </form>
+    </div>
 </div>
 
 
