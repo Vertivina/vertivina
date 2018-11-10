@@ -1,7 +1,14 @@
 using System;
+using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
+using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using vertivina.Models;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using Models.MvcContext;
+
 
 namespace vertivina.Controllers
 {
@@ -11,17 +18,16 @@ namespace vertivina.Controllers
         public Productos2Controller(MvcContext context){
             this._context = context;
         }
+        /* 
         public IActionResult Index()
         {
-            //var productos = from m in _context.Productos2 select m;
-            //return View(productos);
+           
             return View();
         }
-        
-        //Por si se quiere conectar a la base de datos aqui está el codigo
-        /* 
-         public async Task<IActionResult> Index(searchString){
-              var productos = from m in _context.Productos2
+        */
+       
+         public async Task<IActionResult> Index(String searchString){
+              var productos = from m in _context.Producto2
                  select m;
              if (!String.IsNullOrEmpty(searchString))
             {
@@ -30,7 +36,7 @@ namespace vertivina.Controllers
 
             return View(await productos.ToListAsync());
          }
-        */
+       
 
 
     }
