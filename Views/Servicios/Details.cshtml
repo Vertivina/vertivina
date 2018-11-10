@@ -10,7 +10,9 @@
 <h2>Detalles</h2>
 
 <div style=" background-color:rgba(184, 210, 214, 0.788);">
-    <h4>Promoción</h4>
+    <h4>Promoción  @Html.DisplayFor(model => model.Nombre) 
+
+    </h4>
     <br/>
     <div class="container">
     <div class="row">
@@ -20,12 +22,7 @@
       </div>
       <div class="col-md-4">
           <dl class="dl-horizontal">
-              <dt>
-            @Html.DisplayNameFor(model => model.Nombre)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.Nombre)
-        </dd>
+          
         <dt>
             @Html.DisplayNameFor(model => model.Precio)
         </dt>
@@ -33,7 +30,7 @@
             @Html.DisplayFor(model => model.Precio)
         </dd>
          <dt>
-           Cualquier duda consulte aqui
+           Contacto
         </dt>
         <dd>
             @Html.DisplayFor(model => model.Celular)
