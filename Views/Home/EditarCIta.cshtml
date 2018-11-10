@@ -1,0 +1,138 @@
+@model vertivina.Models.Cita
+
+
+<style>
+    .prise-box{width:100%;float:left;border-radius:10px;-webkit-border-radius:10px;-moz-border-radius:10px;box-shadow: rgba(158,158,158,.61) 0 2px 5px 0;margin-bottom:10px;}
+.prise-box img{width:100%;border-radius:10px 10px 0 0;-webkit-border-radius:10px 10px 0 0;-moz-border-radius:10px 10px 0 0;}
+.info-this{    float: left;   width: 100%;   background:#ececec;    padding: 15px;}
+.left-box{width: 70%;float:left;}
+.left-box a{
+    background-color: #8d0104;
+    color: #ffffff;
+    padding: 4px 12px;
+    font-size: 13px;
+    margin-top: 6px;
+    display: inline-block;
+    }
+.left-box h2{
+    font-weight: normal;
+    margin:0px;
+    padding:0px;
+    color: #000;
+    text-align: left;
+    font-style:italic;
+    font-size: 29px;
+    margin: 0;
+    margin-bottom: 0;
+    margin-top: -10px;
+    }
+.right-box-up{width: 30%;float:right;}
+.blue-box span{    font-size: 12px;
+    margin: 4px 5px;
+    color: #fffb5f;}
+.blue-box h2{margin: 2px 1px;
+    font-size: 26px;
+    color: #ffffff;
+    font-weight: normal;}
+.blue-box{box-shadow: 1px 1px 4px #797979;
+    background-color: #031f5d;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 15px 4px;
+    text-align: center;
+  
+    width: 80px;
+    float: right;
+    margin-top: -29px;
+    z-index: 999999;
+    position: relative;}
+
+</style>
+
+<h2>Edit</h2>
+
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="EditarCita">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="ID" />
+            <div class="form-group">
+                <label asp-for="Nombre" class="control-label"></label>
+                <input asp-for="Nombre" class="form-control" />
+                <span asp-validation-for="Nombre" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Mascota" class="control-label"></label>
+                <input asp-for="Mascota" class="form-control" />
+                <span asp-validation-for="Mascota" class="text-danger"></span>
+            </div>
+             <div class="form-group">
+                <label asp-for="Telefono" class="control-label"></label>
+                <input asp-for="Telefono" class="form-control" />
+                <span asp-validation-for="Telefono" class="text-danger"></span>
+            </div>
+             <div class="form-group">
+                <label asp-for="TipoTelefono" class="control-label"></label>
+                <select  class="form-control" asp-for="TipoTelefono">
+                             <option value="Fijo">Fijo</option>
+                             <option value="Movil">Movil</option>
+                        </select>
+                <span asp-validation-for="TipoTelefono" class="text-danger"></span>
+            </div>
+             <div class="form-group">
+                <label asp-for="Doctor" class="control-label"></label>
+               
+                <select  class="form-control" asp-for="Doctor">
+                    <option value="Morgan">Morgan</option>
+                    <option value="Darling">Darling</option>
+                    <option value="Darling">Darrow</option>
+                </select>
+                <span asp-validation-for="Doctor" class="text-danger"></span>
+            </div>
+             <div class="form-group">
+                <label asp-for="Fecha" class="control-label"></label>
+                <input type="date" asp-for="Fecha" class="form-control" />
+                <span asp-validation-for="Fecha" class="text-danger"></span>
+            </div>
+             <div class="form-group">
+                <label asp-for="Hora" class="control-label"></label>
+                 <select  class="form-control" asp-for="Hora">
+                     <option value="14:45">10:15</option>
+                    <option value="12:30">12:30</option>
+                    <option value="14:45">14:45</option>
+                </select>
+                <span asp-validation-for="Hora" class="text-danger"></span>
+            </div>
+             <div class="form-group">
+                <label asp-for="TipoMascota" class="control-label"></label>
+                <select  class="form-control" asp-for="TipoMascota">
+                    <option value="Perro">Perro</option>
+                    <option value="Gato">Gato</option>
+                </select>  
+                <span asp-validation-for="TipoMascota" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TipoCita" class="control-label"></label>
+                <input asp-for="TipoCita" class="form-control" />
+                <span asp-validation-for="TipoCita" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Direccion" class="control-label"></label>
+                <input asp-for="Direccion" class="form-control" />
+                <span asp-validation-for="Direccion" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-default" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="ListaCita    ">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

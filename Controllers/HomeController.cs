@@ -115,6 +115,84 @@ namespace vertivina.Controllers
 
             return View();
         }
+        public async Task<IActionResult> EditarCita(int? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var servicio = await _context.Cita.SingleOrDefaultAsync(m => m.ID == id);
+            if (servicio == null)
+            {
+                return NotFound();
+            }
+            return View(servicio);
+        }
+
+         [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> EditarCita(int id, [Bind("ID,Nombre,Mascota,Telefono,TipoTelefono,Doctor,Fecha,Hora,TipoMascota,TipoCita,Direccion")] Cita cita)
+        {
+            if (id != cita.ID)
+            {
+                return NotFound();
+            }
+
+            if (ModelState.IsValid)
+            {
+                try
+                {
+                    _context.Update(cita);
+                    await _context.SaveChangesAsync();
+                }
+                catch (DbUpdateConcurrencyException)
+                {
+                    if (!CitaExists(cita.ID))
+                    {
+                        return NotFound();
+                    }
+                    else
+                    {
+                        throw;
+                    }
+                }
+                return RedirectToAction("ListaCita");
+            }
+            return View(cita);
+        }
+
+         private bool CitaExists(int id)
+        {
+            return _context.Cita.Any(e => e.ID == id);
+        }
+
+         public async Task<IActionResult> EliminarCita(int? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var servicio = await _context.Cita
+                .SingleOrDefaultAsync(m => m.ID == id);
+            if (servicio == null)
+            {
+                return NotFound();
+            }
+
+            return View(servicio);
+        }
+
+        [HttpPost, ActionName("EliminarCita")]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> DeleteConfirmed(int id)
+        {
+            var servicio = await _context.Cita.SingleOrDefaultAsync(m => m.ID == id);
+            _context.Cita.Remove(servicio);
+            await _context.SaveChangesAsync();
+            return RedirectToAction("ListaCita");
+        }
 
        
         [HttpPost]
