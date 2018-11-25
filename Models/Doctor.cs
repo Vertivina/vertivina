@@ -5,6 +5,7 @@ namespace vertivina.Models
 {
     public class Doctor: Persona
     {
+        public int ID { get; set; }
         
         public DateTime? fecha{get; set;}
         [Required]

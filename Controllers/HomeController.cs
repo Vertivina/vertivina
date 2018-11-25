@@ -21,6 +21,14 @@ namespace vertivina.Controllers
         {
             _context = context;
         }
+
+        public void RecargarCitas(){
+            var doctor=_context.Doctor.ToList();
+            var servicio=_context.Servicio.ToList();
+            ViewBag.Doctores= new SelectList(doctor,"ID","Nombre");
+            ViewBag.Horarios= new SelectList(doctor,"ID","Horario");
+            ViewBag.Servicios= new SelectList(servicio,"ID","Nombre");
+        }
         public IActionResult Index()
         {
             return View();
@@ -79,12 +87,12 @@ namespace vertivina.Controllers
 
         public async Task<IActionResult> ListaCita(string searchString)
         {
-             var citas = from m in _context.Cita
-             select m;
+             var citas = from m in _context.Cita select m;
                if (!String.IsNullOrEmpty(searchString))
             {
-                citas = citas.Where(s => s.Nombre.Contains(searchString));
+                citas = citas.Where(s => s.Nombre.Contains(searchString) || s.Mascota.Contains(searchString));
             }
+            ViewData["Local"]="En el local";
 
             return View(await citas.ToListAsync());
         }
@@ -141,6 +149,15 @@ namespace vertivina.Controllers
 
             if (ModelState.IsValid)
             {
+                
+                //await TryUpdateModelAsync(cita);
+
+                //var citaN = await _context.Cita.SingleOrDefaultAsync(m => m.ID == id);
+               /* if(citaN!=null){
+                    _context.Entry(citaN).CurrentValues.SetValues(cita);
+
+                }*/
+             
                 try
                 {
                     _context.Update(cita);
